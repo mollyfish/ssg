@@ -1,0 +1,119 @@
+/* """"" THESE STYLES REMOVE BROWSER DEFAULTS - DO NOT CHANGE OR REMOVE """"" */
+html, body, header, nav, main, section, aside, ul, ol, li, p, 
+h1, h2, h3, h4, h5, h6, 
+form, fieldset, a {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+font-size: 100.01%; /* Fix for some browser bugs */
+background-color: #ffffff;
+}
+h1, h2, h3, h4, h5, h6 {
+font-weight: normal;
+font-size: 100%;
+}
+html {
+  overflow-y: scroll;
+  height: 100%;
+}
+/* --> END OF BROWSER DEFAULT REMOVAL */
+header {
+  background-color: red;
+}
+h1 {
+  font-size: 200%;
+  color: #2b2b2b;
+  padding: .1em .6em;
+}
+h1 span {
+  color: #000;
+  font-weight: bolder;
+}
+a {
+  text-decoration: none;
+}
+nav {
+  background-color: blue;
+}
+nav .main-tab {
+  margin: 3px 0 0 3px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  float: left;
+  padding: .5em;
+  font-size: 150%;
+}
+nav .drop-tab {
+  padding: .6em;
+  width: 100%;
+  font-size: 120%;
+  background-color: #fff;
+  border-bottom: 2px solid blue;
+}
+nav form.search-box {
+  float: right;
+  margin-right: 2%;
+  height: 2em;
+  padding-top: 1em;
+}
+nav button#search-go {
+  padding: 4px;
+  margin-left: 4px; 
+}
+nav .main-tab a {
+  color: #000;
+  text-decoration: none;
+  margin: 40px;
+}
+nav .drop-tab a {
+  color: #000;
+  text-decoration: none;
+  margin: 0 .6%;
+}
+nav .current-tab {
+  background-color: #fff;
+}
+nav .sleeping-tab {
+  background-color: #ddd;
+}
+nav .real-box {
+  clear: both;
+}
+nav .ghost-box {
+  clear: both;
+  display: none;
+}
+main {
+  /*background-color: orange;*/
+}
+#secondary-nav {
+  float: left;
+  width: 15%;
+  font-size: 120%;
+}
+#secondary-nav ul {
+  list-style-type: none;
+  border-bottom: 3px solid red;
+}
+#secondary-nav ul li {
+  padding: .5em .5em .5em 1em;
+}
+#secondary-nav ul li:hover {
+  background-color: #efefef;
+}
+#secondary-nav ul ul li {
+  padding: .5em .5em .5em 1.8em;
+  font-size: 90%;
+}
+#featured {
+  background-color: brown;
+}
+footer {
+  height: 30px;
+  text-align: center;
+  padding-top: 10px;
+  clear: both;
+}

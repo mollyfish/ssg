@@ -114,44 +114,6 @@ main {
   padding: .5em .5em .5em 1.8em;
   font-size: 90%;
 }
-#featured {
-  /*background-color: brown;*/
-  float: left;
-  width: 80%;
-  padding: 1em;
-}
-#carousel {
-  width: 60%;
-  height: 15em;
-  background-color: blue;
-  padding: 10px;
-  margin: 0 auto;
-  position: relative;
-}
-.caro-item {
-  width: 90%;
-  height: 13em;
-  background-color: orange;
-  padding: 1em;
-  margin: 0 auto;
-  border: 1px solid #ddd;
-}
-#carousel .diva {
-
-}
-#carousel .backup {
-  display: none;
-}
-#carousel button {
-  position: absolute;
-  top: 48%;
-}
-#carousel #caro-left {
-  left: 0;
-}
-#carousel #caro-right {
-  right: 0;
-}
 footer {
   height: 30px;
   text-align: center;

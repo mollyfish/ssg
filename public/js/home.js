@@ -50,7 +50,7 @@ $(function() {
   });
 
   $('#carousel').on('click', 'div.caro-item', function() {
-
+    // $('#caro-1').toggleClass('animate');
   });
   
 

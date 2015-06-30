@@ -1,0 +1,61 @@
+#featured {
+  /*background-color: brown;*/
+  float: left;
+  width: 80%;
+  padding: 1em;
+}
+#carousel {
+  width: 60%;
+  height: 15em;
+  background-color: blue;
+  padding: 10px;
+  margin: 0 auto;
+  position: relative;
+}
+.caro-item {
+  width: 86%;
+  height: 13em;
+  background-color: orange;
+  padding: 1em;
+  /*margin: 0 auto;*/
+  border: 1px solid #ddd;
+  transition: opacity 1s;
+  position: absolute;
+  left: 4%;
+}
+.caro-item:hover {
+
+}
+#carousel .diva {
+
+}
+#carousel .backup {
+  opacity: 0;
+}
+#carousel button {
+  position: absolute;
+  top: 48%;
+}
+#carousel #caro-left {
+  left: 0;
+}
+#carousel #caro-right {
+  right: 0;
+}
+.animate {
+  opacity: 0.1;
+/*  animation-duration: 1s;
+  animation-name: slidein;*/
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 0%;
+    width: 100%;
+  }
+  to {
+    margin-left: 100%;
+    width: 300%; 
+  }
+}
+

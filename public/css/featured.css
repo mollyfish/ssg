@@ -1,61 +1,104 @@
 #featured {
-  /*background-color: brown;*/
   float: left;
   width: 80%;
   padding: 1em;
 }
 #carousel {
-  width: 60%;
-  height: 15em;
-  background-color: blue;
-  padding: 10px;
-  margin: 0 auto;
+  width: 660px;
+  height: 240px;
+  background-color: #eee;
+  padding: 4px 10px;
+  margin: 0 20px;
   position: relative;
-}
-.caro-item {
-  width: 86%;
-  height: 13em;
-  background-color: orange;
-  padding: 1em;
-  /*margin: 0 auto;*/
-  border: 1px solid #ddd;
-  transition: opacity 1s;
-  position: absolute;
-  left: 4%;
-}
-.caro-item:hover {
-
-}
-#carousel .diva {
-
+  border-radius: 10px;
 }
 #carousel .backup {
   opacity: 0;
 }
-#carousel button {
+.caro-item {
+  width: 608px;
+  height: 226px;
+  background-color: #bbb;
+  padding: 6px;
+  border-radius: 10px;
+  transition: opacity 2s;
   position: absolute;
-  top: 48%;
+  left: 30px;
+}
+.caro-item h3 {
+  margin: 5px;
+}
+
+/*_____________________________
+Carousel Buttons 
+*/
+#carousel button {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  border: 1px solid #fff;
+  border-radius: 12px;
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
 }
 #carousel #caro-left {
-  left: 0;
+  top: 48%;
+  left: 4px;
+  padding: 0 3px 3px 3px;
+  font-size: 100%;
 }
 #carousel #caro-right {
-  right: 0;
+  top: 48%;
+  right: 4px;
+  padding: 0 3px 3px 3px;
+  font-size: 100%;
 }
-.animate {
-  opacity: 0.1;
-/*  animation-duration: 1s;
-  animation-name: slidein;*/
+#carousel #pause {
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  right: 2px;
+  bottom: 6px;
+  font-size: 6px;
+  font-weight: bolder;
+  background-color: #bbb;
 }
-
-@keyframes slidein {
-  from {
-    margin-left: 0%;
-    width: 100%;
-  }
-  to {
-    margin-left: 100%;
-    width: 300%; 
-  }
+/*_____________________________
+Carousel Position Dots 
+*/
+#pos-wrapper {
+  position: relative;
+  width: 160px;
+  height: 10px;
+  margin: 225px auto 0 auto;
 }
-
+#pos1, #pos2, #pos3, #pos4, #pos5, #pos6 {
+  height: 10px;
+  width: 10px;
+  border-radius: 5px;
+  background-color: #ccc;
+  position: absolute;
+  transition: background-color 1s;
+}
+#pos1 {
+  left: 0;
+}
+#pos2 {
+  left: 30px;
+}
+#pos3 {
+  left: 60px;
+}
+#pos4 {
+  left: 90px;
+}
+#pos5 {
+  left: 120px;
+}
+#pos6 {
+  left: 150px;
+}
+#pos1.diva, #pos2.diva, #pos3.diva, #pos4.diva, #pos5.diva, #pos6.diva {
+  background-color: #efefef;
+}

@@ -21,7 +21,7 @@ html {
 }
 /* --> END OF BROWSER DEFAULT REMOVAL */
 header {
-  background-color: red;
+  background-color: #ddd;
 }
 h1 {
   font-size: 200%;
@@ -34,15 +34,17 @@ h1 span {
 }
 h2 {
   font-size: 160%;
+  margin-left: 20px;
 }
 h3 {
   font-size: 140%;
 }
 a {
   text-decoration: none;
+  color: #000;
 }
 nav {
-  background-color: blue;
+  background-color: #ccc;
 }
 nav .main-tab {
   margin: 3px 0 0 3px;
@@ -57,7 +59,7 @@ nav .drop-tab {
   width: 100%;
   font-size: 120%;
   background-color: #fff;
-  border-bottom: 2px solid blue;
+  border-bottom: 2px solid #ccc;
 }
 nav form.search-box {
   float: right;
@@ -93,7 +95,6 @@ nav .ghost-box {
   display: none;
 }
 main {
-  /*background-color: orange;*/
 }
 #secondary-nav {
   float: left;
@@ -102,7 +103,7 @@ main {
 }
 #secondary-nav ul {
   list-style-type: none;
-  border-bottom: 3px solid red;
+  border-bottom: 3px solid #ddd;
 }
 #secondary-nav ul li {
   padding: .5em .5em .5em 1em;
@@ -119,4 +120,9 @@ footer {
   text-align: center;
   padding-top: 10px;
   clear: both;
+  position: absolute;
+  bottom: 0;
+  margin: 0 auto;
+  width: 100%;
+  font-size: 30%;
 }

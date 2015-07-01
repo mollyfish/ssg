@@ -4,11 +4,10 @@
   padding: 1em;
 }
 #carousel {
-  width: 660px;
-  height: 240px;
-  background-color: #eee;
-  padding: 4px 10px;
-  margin: 0 20px;
+  width: 600px;
+  height: 226px;
+  padding: 5px;
+  margin: 20px 20px 10px 10px;
   position: relative;
   border-radius: 10px;
 }
@@ -16,19 +15,22 @@
   opacity: 0;
 }
 .caro-item {
-  width: 608px;
+  width: 590px;
   height: 226px;
-  background-color: #bbb;
-  padding: 6px;
   border-radius: 10px;
   transition: opacity 2s;
   position: absolute;
-  left: 30px;
+  left: 10px;
 }
 .caro-item h3 {
-  margin: 5px;
+  padding: 10px 15px;
+  display: inline;
+  border-radius: 5px;
+  letter-spacing: .1em;
+  color: #fff;
+  background-color: rgba(255, 255, 255, .25);
+  font-size: 180%;
 }
-
 /*_____________________________
 Carousel Buttons 
 */
@@ -36,33 +38,21 @@ Carousel Buttons
   width: 24px;
   height: 24px;
   position: absolute;
-  border: 1px solid #fff;
+  border: 1px solid #ccc;
   border-radius: 12px;
-  background-color: #000;
-  color: #fff;
   cursor: pointer;
 }
 #carousel #caro-left {
-  top: 48%;
+  top: 46%;
   left: 4px;
   padding: 0 3px 3px 3px;
   font-size: 100%;
 }
 #carousel #caro-right {
-  top: 48%;
+  top: 46%;
   right: 4px;
   padding: 0 3px 3px 3px;
   font-size: 100%;
-}
-#carousel #pause {
-  position: absolute;
-  width: 22px;
-  height: 22px;
-  right: 2px;
-  bottom: 6px;
-  font-size: 6px;
-  font-weight: bolder;
-  background-color: #bbb;
 }
 /*_____________________________
 Carousel Position Dots 
@@ -71,15 +61,13 @@ Carousel Position Dots
   position: relative;
   width: 160px;
   height: 10px;
-  margin: 225px auto 0 auto;
+  margin: 210px auto 0 auto;
 }
 #pos1, #pos2, #pos3, #pos4, #pos5, #pos6 {
   height: 10px;
   width: 10px;
   border-radius: 5px;
-  background-color: #ccc;
   position: absolute;
-  transition: background-color 1s;
 }
 #pos1 {
   left: 0;
@@ -99,6 +87,81 @@ Carousel Position Dots
 #pos6 {
   left: 150px;
 }
+/*_________________
+
+
+SUMMER
+
+
+*/
+#carousel {
+  background-color: rgba(255, 255, 255, .6);
+  /*background-color: rgba(246, 254, 217, .6);*/
+  border: 1px solid rgba(106, 165, 0, 1);
+}
+#caro-1 {
+  background-image: url(../images/birdwatching.jpg);
+}
+#caro-2 {
+  background-image: url(../images/farmersmarkets.jpg);
+}
+#caro-3 {
+  background-image: url(../images/orcas.jpg);
+}
+#caro-4 {
+  background-image: url(../images/sunsets.jpg);
+}
+#caro-5 {
+  background-image: url(../images/tidepools.jpg);
+}
+#caro-6 {
+  background-image: url(../images/marinemammals.jpg);
+}
+#caro-1 h3 {
+  position: absolute;
+  background-color: rgba(0, 0, 0, .5);
+  left: 17px;
+  top: 30px;
+}
+#caro-2 h3 {
+  position: absolute;
+  background-color: rgba(255, 255, 255, .5);
+  color: #f4e8ff;
+  right: 17px;
+  bottom: 28px;
+}
+#caro-3 h3 {
+  position: absolute;
+  background-color: rgba(0, 0, 0, .5);
+  left: 87px;
+  top: 30px;
+}
+#caro-4 h3 {
+  position: absolute;
+  background-color: rgba(0, 0, 0, .5);
+  left: 35px;
+  top: 35px;
+}
+#caro-5 h3 {
+  position: absolute;
+  left: 95px;
+  top: 40px;
+}
+#caro-6 h3 {
+  position: absolute;
+  background-color: rgba(0, 0, 0, .5);
+  left: 10px;
+  bottom: 25px;
+}
+#carousel button {
+  border-color: #ccc;
+  background-color: rgba(205, 59, 8, .6);
+  color: #ccc;
+}
+#pos1, #pos2, #pos3, #pos4, #pos5, #pos6 {
+  background-color: rgba(205, 59, 8, .3);
+  transition: background-color 1s;
+}
 #pos1.diva, #pos2.diva, #pos3.diva, #pos4.diva, #pos5.diva, #pos6.diva {
-  background-color: #efefef;
+  background-color: rgba(205, 59, 8, .9);
 }

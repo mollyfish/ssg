@@ -22,16 +22,18 @@ html {
 /* --> END OF BROWSER DEFAULT REMOVAL */
 header {
   background-color: #100b04;
-  height: 380px;
+  height: 69px;
   background-image: url(../images/SSGbanner.jpg);
   background-repeat: no-repeat;
-  border-bottom: 6px solid #5196d1;
+  border-bottom: 8px solid rgba(106, 165, 0, 1);
+  /*margin-bottom: 3px;*/
   /*opacity: .9;*/
 }
 h1 {
   font-size: 250%;
   letter-spacing: .02em;
-  color: #cd3b08;
+  /*color: #cd3b08;*/
+  color: #000;
   padding: .3em .6em;
   /*background-color: rgba(246, 254, 217, .4);*/
   background-color: rgba(255, 255, 255, .53);

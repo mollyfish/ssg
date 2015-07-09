@@ -13,18 +13,18 @@ $(function() {
   function rotateRight(num) {
     var next = num + 1;
     if (next < 7) {
+      $('.caro-item.diva').removeClass('diva').addClass('backup');
       $('#caro-' + next).removeClass('backup').addClass('diva');
-      $('#caro-' + num).removeClass('diva').addClass('backup');
+      $('.caro-link.diva').removeClass('diva');
       $('#caro-' + next + '-link').removeClass('backup').addClass('diva');
-      $('#caro-' + num + '-link').removeClass('diva').addClass('backup');
       $('#pos' + num).removeClass('diva');
       $('#pos' + next).addClass('diva');
     } else {
       next = 1;
       $('#caro-' + next).removeClass('backup').addClass('diva');
       $('#caro-' + num).removeClass('diva').addClass('backup');
+      $('.caro-link.diva').removeClass('diva');
       $('#caro-' + next + '-link').removeClass('backup').addClass('diva');
-      $('#caro-' + num + '-link').removeClass('diva').addClass('backup');
       $('#pos' + num).removeClass('diva');
       $('#pos' + next).addClass('diva');
     }
@@ -33,18 +33,18 @@ $(function() {
   function rotateLeft(num) {
     var next = num - 1;
     if (next > 0) {
+      $('.caro-item.diva').removeClass('diva').addClass('backup');
       $('#caro-' + next).removeClass('backup').addClass('diva');
-      $('#caro-' + num).removeClass('diva').addClass('backup');
+      $('.caro-link.diva').removeClass('diva');
       $('#caro-' + next + '-link').removeClass('backup').addClass('diva');
-      $('#caro-' + num + '-link').removeClass('diva').addClass('backup');
       $('#pos' + num).removeClass('diva');
       $('#pos' + next).addClass('diva');
     } else {
       next = 6;
       $('#caro-' + next).removeClass('backup').addClass('diva');
       $('#caro-' + num).removeClass('diva').addClass('backup');
+      $('.caro-link.diva').removeClass('diva');
       $('#caro-' + next + '-link').removeClass('backup').addClass('diva');
-      $('#caro-' + num + '-link').removeClass('diva').addClass('backup');
       $('#pos' + num).removeClass('diva');
       $('#pos' + next).addClass('diva');
     }

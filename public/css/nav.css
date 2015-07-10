@@ -55,53 +55,62 @@ nav {
   background-color: rgba(1, 156, 209, .2);
 }
 nav .main-tab {
-  margin: 5px 0 0 90px;
+  margin: 5px 0 0 5px;
+  width: 32.5%;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   float: left;
-  padding: .5em;
+  text-align: center;
+  padding: 10px 0;
   font-size: 150%;
+  color: #000;
+  text-decoration: none;
+  /*padding: 12px 40px;*/
+  /*cursor: default;*/
 }
 nav #main-tab-when {
-  margin: 5px 0 0 45px;
+  margin: 5px 0 0 5px;
 }
 nav .main-tab:hover {
   cursor: pointer;
-  text-decoration: underline;
+  /*text-decoration: underline;*/
 }
 nav .drop-tab {
-  padding: 15px .5em;
+  padding: 12px 0 30px 0;
   width: 100%;
   font-size: 120%;
   background-color: #fff;
   border-bottom: 4px solid rgba(1, 156, 209, 1);
 }
-nav form.search-box {
-  /*float: left;*/
-  /*margin-right: 2%;*/
-  /*height: 2em;*/
-  /*padding-top: 1em;*/
+
+nav .month {
+  float: left;
+  text-align: left;
+  padding: 0 1% 0 1%;
 }
-nav button#search-go {
-  padding: 4px;
-  margin-left: 4px; 
+nav .location {
+  float: left;
+  text-align: left;
+  padding: 0 1% 0 2%;
 }
-nav .main-tab {
-  color: #000;
-  text-decoration: none;
-  padding: 12px 40px;
-  cursor: default;
+nav .attraction {
+  float: left;
+  text-align: left;
+  padding: 0 1% 0 2%;
 }
 nav .drop-tab a {
   color: #000;
   text-decoration: none;
-  margin: 0 .6%;
+  /*margin: 0 .6%;*/
 }
 nav .current-tab {
   background-color: rgba(1, 156, 209, .7);
 }
 nav .sleeping-tab {
   background-color: rgba(1, 156, 209, .3);
+}
+nav .sleeping-tab:hover {
+  background-color: rgba(1, 156, 209, .5);
 }
 nav .real-box {
   clear: both;
@@ -116,10 +125,20 @@ nav .real-box a:hover {
 }
 #contact {
   float: right;
-  margin-top: 24px;
+  margin-top: 26px;
   margin-right: 20px;
   color: #cd3b08;
   font-weight: bold;
+}
+#contact form#search-box {
+  display: inline;
+  float: left;
+  padding-right: 40px;
+  padding-bottom: 0px;
+}
+#contact button#search-go {
+  padding: 3px 3px 4px 3px;
+  margin-left: 0px;
 }
 #contact a {
   color: #cd3b08;

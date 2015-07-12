@@ -5,6 +5,7 @@ $(function() {
   var intervalID;
 
   function caroStart(num) {
+    $('#box-' + num).removeClass('backup').addClass('diva');
     $('#caro-' + num).removeClass('backup').addClass('diva');
     $('#caro-' + num + '-link').removeClass('backup').addClass('diva');
     $('#pos' + num).addClass('diva');
@@ -12,6 +13,8 @@ $(function() {
 
   function rotateRight(num) {
     var next = num + 1;
+    console.log(num);
+    console.log(next);
     if (next < 7) {
       $('.caro-item.diva').removeClass('diva').addClass('backup');
       $('#caro-' + next).removeClass('backup').addClass('diva');
@@ -19,6 +22,8 @@ $(function() {
       $('#caro-' + next + '-link').removeClass('backup').addClass('diva');
       $('#pos' + num).removeClass('diva');
       $('#pos' + next).addClass('diva');
+      $('.box-link.diva').removeClass('diva').addClass('backup');
+      $('#box-' + next).removeClass('backup').addClass('diva');
     } else {
       next = 1;
       $('#caro-' + next).removeClass('backup').addClass('diva');
@@ -27,6 +32,8 @@ $(function() {
       $('#caro-' + next + '-link').removeClass('backup').addClass('diva');
       $('#pos' + num).removeClass('diva');
       $('#pos' + next).addClass('diva');
+      $('.box-link.diva').removeClass('diva').addClass('backup');
+      $('#box-' + next).removeClass('backup').addClass('diva');
     }
   };
 
@@ -39,6 +46,8 @@ $(function() {
       $('#caro-' + next + '-link').removeClass('backup').addClass('diva');
       $('#pos' + num).removeClass('diva');
       $('#pos' + next).addClass('diva');
+      $('.box-link.diva').removeClass('diva').addClass('backup');
+      $('#box-' + next).removeClass('backup').addClass('diva');
     } else {
       next = 6;
       $('#caro-' + next).removeClass('backup').addClass('diva');
@@ -47,16 +56,20 @@ $(function() {
       $('#caro-' + next + '-link').removeClass('backup').addClass('diva');
       $('#pos' + num).removeClass('diva');
       $('#pos' + next).addClass('diva');
+      $('.box-link.diva').removeClass('diva').addClass('backup');
+      $('#box-' + next).removeClass('backup').addClass('diva');
     }
   };
 
   function posChange(num) {
     $('.caro-item.diva').addClass('backup').removeClass('diva');
+    $('.box-link.diva').addClass('backup').removeClass('diva');
     $('.pos.diva').removeClass('diva');
     $('.caro-link.diva').removeClass('diva');
     $('#caro-' + num + '-link').removeClass('backup').addClass('diva');
     $('div#pos' + num).addClass('diva');
     $('#caro-' + num).removeClass('backup').addClass('diva');
+    $('#box-' + num).removeClass('backup').addClass('diva');
   };
 
   if (initialCaro === 1) {
@@ -88,46 +101,49 @@ $(function() {
   startRotation();
 
   $('#carousel').on('click', 'button#caro-right', function() {
+    console.log('go right');
     toPop = $(this).siblings('.diva');
-    if ($(toPop).attr('id') === 'caro-1') {
+    console.log(toPop);
+    if ($(toPop).attr('id') === 'box-1') {
       rotateRight(1);
     }
-    if ($(toPop).attr('id') === 'caro-2') {
+    if ($(toPop).attr('id') === 'box-2') {
       rotateRight(2);
     }
-    if ($(toPop).attr('id') === 'caro-3') {
+    if ($(toPop).attr('id') === 'box-3') {
       rotateRight(3);
     }
-    if ($(toPop).attr('id') === 'caro-4') {
+    if ($(toPop).attr('id') === 'box-4') {
       rotateRight(4);
     }
-    if ($(toPop).attr('id') === 'caro-5') {
+    if ($(toPop).attr('id') === 'box-5') {
       rotateRight(5);
     } 
-    if ($(toPop).attr('id') === 'caro-6') {
+    if ($(toPop).attr('id') === 'box-6') {
       rotateRight(6);
     }
     stopRotation();
   });
 
   $('#carousel').on('click', 'button#caro-left', function() {
+    console.log('go left');
     toPop = $(this).siblings('.diva');
-    if ($(toPop).attr('id') === 'caro-6') {
+    if ($(toPop).attr('id') === 'box-6') {
       rotateLeft(6);
     }
-    if ($(toPop).attr('id') === 'caro-5') {
+    if ($(toPop).attr('id') === 'box-5') {
       rotateLeft(5);
     }
-    if ($(toPop).attr('id') === 'caro-4') {
+    if ($(toPop).attr('id') === 'box-4') {
       rotateLeft(4);
     }
-    if ($(toPop).attr('id') === 'caro-3') {
+    if ($(toPop).attr('id') === 'box-3') {
       rotateLeft(3);
     }
-    if ($(toPop).attr('id') === 'caro-2') {
+    if ($(toPop).attr('id') === 'box-2') {
       rotateLeft(2);
     } 
-    if ($(toPop).attr('id') === 'caro-1') {
+    if ($(toPop).attr('id') === 'box-1') {
       rotateLeft(1);
     }
     stopRotation();
@@ -159,31 +175,24 @@ $(function() {
   });
 
   function autoRotate() {
-    toPop = $('.caro-item.diva');
-    if ($(toPop).attr('id') === 'caro-1') {
+    toPop = $('.box-link.diva');
+    if ($(toPop).attr('id') === 'box-1') {
       rotateRight(1);
     }
-    if ($(toPop).attr('id') === 'caro-2') {
+    if ($(toPop).attr('id') === 'box-2') {
       rotateRight(2);
     }
-    if ($(toPop).attr('id') === 'caro-3') {
+    if ($(toPop).attr('id') === 'box-3') {
       rotateRight(3);
     }
-    if ($(toPop).attr('id') === 'caro-4') {
+    if ($(toPop).attr('id') === 'box-4') {
       rotateRight(4);
     }
-    if ($(toPop).attr('id') === 'caro-5') {
+    if ($(toPop).attr('id') === 'box-5') {
       rotateRight(5);
     } 
-    if ($(toPop).attr('id') === 'caro-6') {
+    if ($(toPop).attr('id') === 'box-6') {
       rotateRight(6);
     }
   };
-  // function startRotation() {
-  //   intervalID = window.setInterval(autoRotate, 6000);
-  // };
-  // function stopRotation() {
-  //   clearInterval(intervalID);
-  // };
-  // startRotation();
 });

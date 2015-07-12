@@ -1,18 +1,19 @@
 #carousel {
-  width: 100%;
   height: 399px;
   position: relative;
   border-bottom: 4px solid rgba(1, 156, 209, 1);
-  /*padding-bottom: 3px;*/
   overflow: hidden;
+  background-color: #232323;
 }
 .caro-item {
-  width: 100%;
   height: 399px;
   opacity: 1;
   transition: opacity 1s;
   position: absolute;
   background-color: #232323;
+}
+.caro-item.special {
+  width: 100%;
 }
 .caro-item.backup {
   opacity: 0;
@@ -24,7 +25,6 @@
 }
 .caro-item h3 {
   padding: 10px 15px 10px 45px;
-  display: inline;
   width: 100%;
   letter-spacing: .1em;
   background-color: rgba(255, 255, 255, .5);
@@ -33,14 +33,25 @@
   position: absolute;
   top: 0px;
   left: 0px;
-  /*transition: opacity 2s;*/
+}
+#caro-0-link {
+  position: relative;
+  width: 100%;
+  display: block;
+}
+a.box-link {
+  position: absolute;
+}
+a.box-link.diva {
+  z-index: 10;
+}
+a.box-link.backup {
+  z-index: -10;
 }
 #caro-1 h3.diva, #caro-2 h3.diva, #caro-3 h3.diva, #caro-4 h3.diva, #caro-5 h3.diva, #caro-6 h3.diva {
-  z-index: 1;
   opacity: 1;
 }
 #caro-1 h3.backup, #caro-2 h3.backup, #caro-3 h3.backup, #caro-4 h3.backup, #caro-5 h3.backup, #caro-6 h3.backup {
-  z-index: -1;
   opacity: 0;
 }
 h3.diva span.feature a, h3.backup span.feature a {
@@ -76,12 +87,14 @@ Carousel Buttons
   left: 4px;
   padding: 0;
   font-size: 400%;
+  z-index: 20;
 }
 #caro-right {
   bottom: 3%;
   right: 4px;
   padding: 0;
   font-size: 400%;
+  z-index: 20;
 }
 span#left {
   position: absolute;
@@ -102,6 +115,7 @@ Carousel Position Dots
   height: 10px;
   margin: 0 auto;
   margin-top: 360px;
+  z-index: 20;
 }
 #pos1, #pos2, #pos3, #pos4, #pos5, #pos6 {
   height: 20px;

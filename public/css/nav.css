@@ -41,15 +41,29 @@ h1 span {
   margin-left: 5px;
 }
 h2 {
-  font-size: 160%;
-  margin-left: 20px;
+  font-size: 210%;
+  margin: 10px 20px;
+  font-weight: bold;
+  letter-spacing: .1em;
+  /*text-align: center;*/
 }
 h3 {
   font-size: 140%;
+  font-style: italic;
+  margin-bottom: 10px;
+}
+h4 {
+  font-size: 120%;
 }
 a {
   text-decoration: none;
   color: #000;
+}
+button.featured-for h4 {
+  font-size: 170%;
+}
+button.featured-for p {
+  font-size: 150%;
 }
 nav {
   background-color: rgba(1, 156, 209, .2);
@@ -151,12 +165,16 @@ nav .real-box a:hover {
   color: #5196d1;
   text-decoration: underline;
 }
-main {
-}
+/*main {
+  background-image: url(../images/SSGbanner.jpg);
+  border-left: 1px solid rgba(81, 150, 309, 1);
+  border-right: 1px solid rgba(81, 150, 309, 1);
+}*/
 #secondary-nav {
   float: left;
-  width: 15%;
+  width: 14.5%;
   font-size: 120%;
+  border-right: 1px solid rgba(81, 150, 309, 1);
 }
 #secondary-nav ul {
   list-style-type: none;
@@ -171,6 +189,42 @@ main {
 #secondary-nav ul ul li {
   padding: .5em .5em .5em 1.8em;
   font-size: 90%;
+}
+#featured {
+  width: 85%;
+  float: left;
+}
+#featured-columns {
+  width: 100%;
+}
+#featured-columns .places {
+  width: 48%;
+  float: left;
+  margin: 0 0 0 20px;
+}
+#featured-columns .things {
+  width: 48%;
+  float: left;
+  margin: 0 0 0 20px;
+}
+main .featured-for {
+  width: 95%;
+  padding: 20px;
+  clear: both;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  margin-bottom: 15px;
+  background-color: none;
+  background: none;
+  text-align: left;
+}
+main .featured-for img {
+  float: left;
+  margin-right: 10px;
+  /*margin-bottom: 20px;*/
+}
+a button.featured-for:hover {
+  border-color: #000;
 }
 footer {
   height: 30px;

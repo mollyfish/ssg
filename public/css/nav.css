@@ -20,18 +20,27 @@ html {
   height: 100%;
 }
 /* --> END OF BROWSER DEFAULT REMOVAL */
+
+/*COLORS*/
+/*rgba(63, 178, 74, 1) olive green*/
+/*rgba(122, 188, 9, 1) leaf green*/
+/*rgba(165, 147, 0, 1) tan*/
+/*rgba(188, 130, 9, 1) orange brown*/
+/*rgba(178, 72, 0, 1) chestnut*/
+
 header {
   background-color: #100b04;
-  height: 69px;
+  height: 87px;
   background-image: url(../images/SSGbanner.jpg);
   background-repeat: no-repeat;
-  border-bottom: 4px solid rgba(106, 165, 0, 1);
+  /*border-bottom: 4px solid rgba(106, 165, 0, 1);*/
+  border-bottom: 1px solid rgba(122, 188, 9, 1); /*leaf*/
 }
 h1 {
   font-size: 250%;
   letter-spacing: .02em;
   color: #000;
-  padding: 12px 45px;
+  padding: 12px 45px 30px 45px;
   background-color: rgba(255, 255, 255, .53);
   font-weight: bolder;
 }
@@ -47,10 +56,32 @@ h2 {
   letter-spacing: .1em;
   /*text-align: center;*/
 }
+header h2 {
+  font-size: 100%;
+  font-weight: normal;
+  font-style: italic;
+  margin: -28px 45px 0 45px;
+  /*background-color: rgba(255, 255, 255, .53);*/
+}
 h3 {
   font-size: 140%;
   font-style: italic;
   margin-bottom: 10px;
+}
+.places {
+  border-right: 1px solid #efefef;
+}
+.places h3, .things h3 {
+  color: #fff;
+  letter-spacing: .05em;
+  background-image: url(../images/gradient.png);
+  background-position: left;
+  background-repeat: repeat-y;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  padding: 4px 2px 2px 8px;
+  width: 90%;
+  margin: 20px 0;
 }
 h4 {
   font-size: 120%;
@@ -61,12 +92,15 @@ a {
 }
 button.featured-for h4 {
   font-size: 170%;
+  font-weight: bold;
 }
 button.featured-for p {
   font-size: 150%;
 }
 nav {
-  background-color: rgba(1, 156, 209, .2);
+  /*background-color: rgba(1, 156, 209, .2);*/
+  background-color: rgba(122, 188, 9, .2);/*leaf*/
+  border-top: 3px solid rgba(188, 130, 9, 1);/*orange*/
 }
 nav .main-tab {
   margin: 5px 0 0 5px;
@@ -93,9 +127,16 @@ nav .drop-tab {
   padding: 12px 0 30px 0;
   width: 100%;
   font-size: 120%;
-  background-color: #fff;
-  border-bottom: 4px solid rgba(1, 156, 209, 1);
+  /*border-bottom: 4px solid rgba(1, 156, 209, 1);*/
+  border-bottom: 4px solid rgba(178, 72, 0, .9);/*chestnut*/
 }
+
+/*COLORS*/
+/*rgba(63, 178, 74, 1) olive green*/
+/*rgba(122, 188, 9, 1) leaf green*/
+/*rgba(165, 147, 0, 1) tan*/
+/*rgba(188, 130, 9, 1) orange brown*/
+/*rgba(178, 72, 0, 1) chestnut*/
 
 nav .month {
   float: left;
@@ -115,20 +156,28 @@ nav .attraction {
 nav .drop-tab a {
   color: #000;
   text-decoration: none;
-  /*margin: 0 .6%;*/
+  letter-spacing: .05em;
+}
+nav .month.current a {
+  font-weight: bolder;
+  color: rgba(178, 72, 0, 1);/*chestnut*/
 }
 nav .current-tab {
-  background-color: rgba(1, 156, 209, .7);
+  /*background-color: rgba(1, 156, 209, .7);*/
+  background-color: rgba(63, 178, 74, .5);/*olive*/
 }
 nav .sleeping-tab {
-  background-color: rgba(1, 156, 209, .3);
+  /*background-color: rgba(1, 156, 209, .3);*/
+  background-color: rgba(63, 178, 74, .2);/*olive*/
 }
 nav .sleeping-tab:hover {
-  background-color: rgba(1, 156, 209, .5);
+  /*background-color: rgba(1, 156, 209, .5);*/
+  background-color: rgba(63, 178, 74, .4);/*olive*/
 }
 nav .real-box {
   clear: both;
-  background-color: rgba(1, 156, 209, .7);
+  /*background-color: rgba(1, 156, 209, .7);*/
+  background-color: rgba(63, 178, 74, .5);/*olive*/
 }
 nav .ghost-box {
   clear: both;
@@ -139,15 +188,16 @@ nav .real-box a:hover {
 }
 #contact {
   float: right;
-  margin-top: 26px;
+  margin-top: 40px;
   margin-right: 20px;
-  color: #cd3b08;
+  /*color: #cd3b08;*/
+  color: #000;
   font-weight: bold;
 }
 #contact form#search-box {
   display: inline;
   float: left;
-  padding-right: 40px;
+  padding-right: 20px;
   padding-bottom: 0px;
 }
 #contact button#search-go {
@@ -155,14 +205,15 @@ nav .real-box a:hover {
   margin-left: 0px;
 }
 #contact a {
-  color: #cd3b08;
+  /*color: #cd3b08;*/
+  color: #000;
   text-decoration: none;
 }
 #contact a:visited {
-  color: #cd3b08;
+  /*color: #cd3b08;*/
 }
 #contact a:hover {
-  color: #5196d1;
+  /*color: #5196d1;*/
   text-decoration: underline;
 }
 /*main {
@@ -174,21 +225,23 @@ nav .real-box a:hover {
   float: left;
   width: 14.5%;
   font-size: 120%;
-  border-right: 1px solid rgba(81, 150, 309, 1);
+  border: 2px solid rgba(1, 156, 209, 1);/*blue*/
+  border-left-width: 1px;
+  border-right: none;
+  margin-top: 20px;
 }
 #secondary-nav ul {
   list-style-type: none;
-  border-bottom: 2px solid rgba(81, 150, 309, 1);
 }
 #secondary-nav ul li {
   padding: .5em .5em .5em 1em;
+  border-bottom: 1px solid rgba(1, 156, 209, .5);/*blue*/
+}
+#secondary-nav ul li:last-child {
+  border-bottom: none;
 }
 #secondary-nav ul li:hover {
-  background-color: #efefef;
-}
-#secondary-nav ul ul li {
-  padding: .5em .5em .5em 1.8em;
-  font-size: 90%;
+  background-color: rgba(63, 178, 74, .2);/*olive*/
 }
 #featured {
   width: 85%;
@@ -211,7 +264,7 @@ main .featured-for {
   width: 95%;
   padding: 20px;
   clear: both;
-  border: 1px solid #ddd;
+  border: 1px solid rgba(1, 156, 209, .8);/*blue*/
   border-radius: 15px;
   margin-bottom: 15px;
   background-color: none;
@@ -221,10 +274,13 @@ main .featured-for {
 main .featured-for img {
   float: left;
   margin-right: 10px;
+  border-radius: 5px;
   /*margin-bottom: 20px;*/
 }
 a button.featured-for:hover {
-  border-color: #000;
+  border-color: rgba(178, 72, 0, .5);/*chestnut*/
+  background-color: rgba(63, 178, 74, .2);/*olive*/
+  cursor: pointer;
 }
 footer {
   height: 30px;

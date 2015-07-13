@@ -13,8 +13,6 @@ $(function() {
 
   function rotateRight(num) {
     var next = num + 1;
-    console.log(num);
-    console.log(next);
     if (next < 7) {
       $('.caro-item.diva').removeClass('diva').addClass('backup');
       $('#caro-' + next).removeClass('backup').addClass('diva');
@@ -100,7 +98,7 @@ $(function() {
   };
   startRotation();
 
-  $('#carousel').on('click', 'button#caro-right', function() {
+  $('#July-carousel').on('click', 'button#caro-right', function() {
     console.log('go right');
     toPop = $(this).siblings('.diva');
     console.log(toPop);
@@ -125,7 +123,7 @@ $(function() {
     stopRotation();
   });
 
-  $('#carousel').on('click', 'button#caro-left', function() {
+  $('#July-carousel').on('click', 'button#caro-left', function() {
     console.log('go left');
     toPop = $(this).siblings('.diva');
     if ($(toPop).attr('id') === 'box-6') {
@@ -149,27 +147,27 @@ $(function() {
     stopRotation();
   });
 
-  $('#carousel').on('click', 'div#pos1', function() {
+  $('#July-carousel').on('click', 'div#pos1', function() {
     posChange(1);
     stopRotation();
   });
-  $('#carousel').on('click', 'div#pos2', function() {
+  $('#July-carousel').on('click', 'div#pos2', function() {
     posChange(2);
     stopRotation();
   });
-  $('#carousel').on('click', 'div#pos3', function() {
+  $('#July-carousel').on('click', 'div#pos3', function() {
     posChange(3);
     stopRotation();
   });
-  $('#carousel').on('click', 'div#pos4', function() {
+  $('#July-carousel').on('click', 'div#pos4', function() {
     posChange(4);
     stopRotation();
   });
-  $('#carousel').on('click', 'div#pos5', function() {
+  $('#July-carousel').on('click', 'div#pos5', function() {
     posChange(5);
     stopRotation();
   });
-  $('#carousel').on('click', 'div#pos6', function() {
+  $('#July-carousel').on('click', 'div#pos6', function() {
     posChange(6);
     stopRotation();
   });

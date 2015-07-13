@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="keywords" content="Salish sea, puget sound, nature guide, seattle, washington, seasonal, naturalist, olympic peninsula, summer, fall, autumn, winter, spring, hiking, birding"/>
+  <title></title>
+<!-- CSS
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<link type="text/css" href="css/nav.css" rel="stylesheet"/>
+<link type="text/css" href="css/index-carousel.css" rel="stylesheet"/>
+<!-- JAVASCRIPT
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<script src="js/deps/jquery.js"></script>
+<script src="js/nav.js"></script>
+<script src="js/featured.js"></script>
+<script src="js/set-month.js"></script>
+</head>
+<!-- CONTENT
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<body>
+  <header>
+    <div id="contact">
+      <form id="search-box">
+        <input type="text" name="search" id="search" placeholder="Search">
+        <button type="submit" id="search-go">Go</button>
+      </form>
+      <a href="#d">Blog</a> | <a href="#d">About</a> | <a href="#d">Contact</a> | <a href="#d">FAQ</a>
+    </div>
+    <h1>Salish Sea<span>sonal Guide</span></h1><h2>Where to go and what to see, in and around the Salish Sea</h2>
+  </header>
+  <section id="July-carousel" class="carousel"> 
+    <div class="caro-item special">
+      <h3 id="caro-0-link" class="caro-link">Featured for <span class="current-month-name"></span>:</h3>
+    </div>
+    <a href="#oystercatchers" class="box-link backup" id="box-1">
+      <div class="caro-item backup" id="caro-1">
+      <h3 id="caro-1-link" class="caro-link backup">Featured for <span class="current-month-name"></span>: <span class="feature">Oystercatchers</span></h3>
+      <img id="caro-1-image" src="images/birdwatching.png" alt="an oystercatcher on a rock by the sea">
+      </div>
+    </a>
+    <a href="#farmers" class="box-link backup" id="box-2">
+      <div class="caro-item backup" id="caro-2">
+        <h3 id="caro-2-link" class="caro-link backup">Featured for <span class="current-month-name"></span>: <span class="feature">Farmers Markets</span></h3>
+        <img id="caro-1-image" src="images/farmersmarkets.png" alt="a blooming khardoun">
+      </div>
+    </a>
+    <a href="#orcas" class="box-link backup" id="box-3">
+      <div class="caro-item backup" id="caro-3">
+      <h3 id="caro-3-link" class="caro-link backup">Featured for <span class="current-month-name"></span>: <span class="feature">Orcas</span></h3>
+      <img id="caro-1-image" src="images/orcas.png" alt="two orcas spouting">
+      </div>
+    </a>
+    <a href="#sunsets" class="box-link backup" id="box-4">
+      <div class="caro-item backup" id="caro-4">
+      <h3 id="caro-4-link" class="caro-link backup">Featured for <span class="current-month-name"></span>: <span class="feature">Sunsets</span></h3>
+      <img id="caro-1-image" src="images/sunsets.png" alt="a dramatic red sunset">
+      </div>
+    </a>
+    <a href="#tidepools" class="box-link backup" id="box-5">
+      <div class="caro-item backup" id="caro-5">
+      <h3 id="caro-5-link" class="caro-link backup">Featured for <span class="current-month-name"></span>: <span class="feature">Tidepools</span></h3>
+      <img id="caro-1-image" src="images/tidepools.png" alt="mussels and sea anemones in a rocky crevice">
+      </div>
+    </a>
+    <a href="#seals" class="box-link backup" id="box-6">
+      <div class="caro-item backup" id="caro-6">
+      <h3 id="caro-6-link" class="caro-link backup">Featured for <span class="current-month-name"></span>: <span class="feature">Harbor Seals</span></h3>
+      <img id="caro-1-image" src="images/marinemammals.png" alt="a Harbor seal on a rock">
+      </div>
+    </a>
+    <div id="pos-wrapper">
+      <div class="pos" id="pos1"></div>
+      <div class="pos" id="pos2"></div>
+      <div class="pos" id="pos3"></div>
+      <div class="pos" id="pos4"></div>
+      <div class="pos" id="pos5"></div>
+      <div class="pos" id="pos6"></div>
+    </div>
+    <button id="caro-left"><span id="left">«</span></button>
+    <button id="caro-right"><span id="right">»</span></button>
+  </section>
+  <section id="August-carousel" class="carousel"> 
+    <div class="caro-item special">
+      <h3 id="caro-0-link" class="caro-link">Featured for <span class="current-month-name"></span>:</h3>
+    </div>
+    <a href="#oystercatchers" class="box-link backup" id="box-1">
+      <div class="caro-item backup" id="caro-1">
+      <h3 id="caro-1-link" class="caro-link backup">Featured for <span class="current-month-name"></span>: <span class="feature">Oystercatchers</span></h3>
+      <img id="caro-1-image" src="images/birdwatching.png" alt="an oystercatcher on a rock by the sea">
+      </div>
+    </a>
+    <a href="#farmers" class="box-link backup" id="box-2">
+      <div class="caro-item backup" id="caro-2">
+        <h3 id="caro-2-link" class="caro-link backup">Featured for <span class="current-month-name"></span>: <span class="feature">Farmers Markets</span></h3>
+        <img id="caro-1-image" src="images/farmersmarkets.png" alt="a blooming khardoun">
+      </div>
+    </a>
+    <a href="#orcas" class="box-link backup" id="box-3">
+      <div class="caro-item backup" id="caro-3">
+      <h3 id="caro-3-link" class="caro-link backup">Featured for <span class="current-month-name"></span>: <span class="feature">Orcas</span></h3>
+      <img id="caro-1-image" src="images/orcas.png" alt="two orcas spouting">
+      </div>
+    </a>
+    <a href="#sunsets" class="box-link backup" id="box-4">
+      <div class="caro-item backup" id="caro-4">
+      <h3 id="caro-4-link" class="caro-link backup">Featured for <span class="current-month-name"></span>: <span class="feature">Sunsets</span></h3>
+      <img id="caro-1-image" src="images/sunsets.png" alt="a dramatic red sunset">
+      </div>
+    </a>
+    <a href="#tidepools" class="box-link backup" id="box-5">
+      <div class="caro-item backup" id="caro-5">
+      <h3 id="caro-5-link" class="caro-link backup">Featured for <span class="current-month-name"></span>: <span class="feature">Tidepools</span></h3>
+      <img id="caro-1-image" src="images/tidepools.png" alt="mussels and sea anemones in a rocky crevice">
+      </div>
+    </a>
+    <a href="#seals" class="box-link backup" id="box-6">
+      <div class="caro-item backup" id="caro-6">
+      <h3 id="caro-6-link" class="caro-link backup">Featured for <span class="current-month-name"></span>: <span class="feature">Harbor Seals</span></h3>
+      <img id="caro-1-image" src="images/marinemammals.png" alt="a Harbor seal on a rock">
+      </div>
+    </a>
+    <div id="pos-wrapper">
+      <div class="pos" id="pos1"></div>
+      <div class="pos" id="pos2"></div>
+      <div class="pos" id="pos3"></div>
+      <div class="pos" id="pos4"></div>
+      <div class="pos" id="pos5"></div>
+      <div class="pos" id="pos6"></div>
+    </div>
+    <button id="caro-left"><span id="left">«</span></button>
+    <button id="caro-right"><span id="right">»</span></button>
+  </section>
+   
+  <nav>
+    <div class="main-tab current-tab" id="main-tab-when">When to Go</div>
+    <div class="main-tab sleeping-tab" id="main-tab-where">Where to Go</div>
+    <div class="main-tab sleeping-tab" id="main-tab-what">What to See</div>
+    
+    <div class="drop-tab real-box" id="drop-tab-when">
+      <div class="month"><a href="#">January</a></div>
+      <div class="month"><a href="#">February</a></div>
+      <div class="month"><a href="#">March</a></div>
+      <div class="month"><a href="#">April</a></div>
+      <div class="month"><a href="#">May</a></div>
+      <div class="month"><a href="#">June</a></div>
+      <div class="month"><a href="#">July</a></div>
+      <div class="month"><a href="#">August</a></div>
+      <div class="month"><a href="#">September</a></div>
+      <div class="month"><a href="#">October</a></div>
+      <div class="month"><a href="#">November</a></div>
+      <div class="month"><a href="#">December</a></div>
+    </div>
+    <div class="drop-tab ghost-box" id="drop-tab-where">
+      <div class="location"><a href="#">Salish Sea</a></div>
+      <div class="location"><a href="#">Olympic Peninsula</a></div>
+      <div class="location"><a href="#">Southwest WA</a></div>
+      <div class="location"><a href="#">North Cascades</a></div>
+      <div class="location"><a href="#">I-90 Corridor</a></div>
+      <div class="location"><a href="#">South Cascades</a></div>
+      <div class="location"><a href="#">Eastern WA</a></div>
+    </div>
+    <div class="drop-tab ghost-box" id="drop-tab-what">
+      <div class="attraction"><a href="#">For Kids</a></div>
+      <div class="attraction"><a href="#">Birds</a></div>
+      <div class="attraction"><a href="#">Mammals</a></div>
+      <div class="attraction"><a href="#">Plants</a></div>
+      <div class="attraction"><a href="#">Fish</a></div>
+      <div class="attraction"><a href="#.html">Reptiles <span class="ampersand">&</span> More</a></div>
+      <div class="attraction"><a href="#.html">Insects <span class="ampersand">&</span> More</a></div>
+      <div class="attraction"><a href="#.html">Tidepools <span class="ampersand">&</span> Beyond</a></div>
+      <div class="attraction"><a href="#">Earth <span class="ampersand">&</span> Sky</a></div>
+    </div>
+  </nav>
+  <main>
+    <section id="featured">
+      <div id="featured-columns">
+        <div class="places"><h3>Where to Go</h3>
+          <a href="#saltcreek">
+            <button class="featured-for">
+              <img src="images/saltcreek-button.jpg" height="80" width="80">
+              <h4>Salt Creek</h4>
+              <p>Explore some of the best tidepools in the state.</p>
+            </button>
+          </a>
+          <a href="#hurricanehill">
+            <button class="featured-for">
+              <img src="images/hurricanehill-button.jpg" height="80" width="80">
+              <h4>Hurricane Hill</h4>
+              <p>Discover breathtaking views and gorgeous wildflowers.</p>
+            </button>
+          </a>
+          <a href="#sji">
+            <button class="featured-for">
+              <img src="images/sji-button.jpg" height="80" width="80">
+              <h4>San Juan Islands</h4>
+              <p>A classic summer destination for wildlife watching.</p>
+            </button>
+          </a>
+          <a href="#enchantedlakes">
+            <button class="featured-for">
+              <img src="images/enchantments-button.jpg" height="80" width="80">
+              <h4>The Enchantments</h4>
+              <p>A high-altitude wonderland of lakes, well-worth the hike to get there.</p>
+            </button>
+          </a>
+          <a href="#mtrainier">
+            <button class="featured-for">
+              <img src="images/mtrainier-button.jpg" height="80" width="80">
+              <h4>Mt Rainier</h4>
+              <p>A wonderful - and accessible - destination for hiking, birding, wildflowers, and more.</p>
+            </button>
+          </a>
+        </div>
+        <div class="things"><h3>What to See</h3>
+          <a href="#oystercatchers">
+            <button class="featured-for">
+              <img src="images/oystercatcher-button.jpg" height="80" width="80">
+              <h4>Oystercatchers</h4>
+              <p>Catch a glimpse of these charming, distinctive brds.</p>
+            </button>
+          </a>
+          <a href="#sunsets">
+            <button class="featured-for">
+              <img src="images/sunset-button.jpg" height="80" width="80">
+              <h4>Sunsets</h4>
+              <p>Why are Salish Sea sunsets so red in the summertime?</p>
+            </button>
+          </a>
+          <a href="#orcas">
+            <button class="featured-for">
+              <img src="images/orca-button.jpg" height="80" width="80">
+              <h4>Orcas</h4>
+              <p>Summer is the time to experience an encounter with these Salish Sea icons.</p>
+            </button>
+          </a>
+          <a href="#harborseals">
+            <button class="featured-for">
+              <img src="images/harborseal-button.jpg" height="80" width="80">
+              <h4>Harbor Seals</h4>
+              <p>Year-round charmers, Harbor Seals are a common sight in the Salish Sea.</p>
+            </button>
+          </a>
+          <a href="#huckleberries">
+            <button class="featured-for">
+              <img src="images/huckleberries-button.jpg" height="80" width="80">
+              <h4>Huckleberries</h4>
+              <p>Red, tart, and delicious - get them before they're gone!</p>
+            </button>
+          </a>
+        </div>
+      </div>
+    </section>
+        <section id="secondary-nav">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">FAQ</a></li>
+        <li><a href="#">Popular</a></li>
+        <li><a href="#">For Kids</a></li>
+      </ul>
+    </section>
+  </main>
+  <footer>Copyright 2015 &copy; All Rights Reserved</footer>
+
+  <!--
+  wolf moon photo by pollyalida https://www.flickr.com/photos/pollyalida/
+  ski safari by patrickdevries2003 https://www.flickr.com/photos/p_de_vries/
+  storm watching photo by Joey Rozier https://www.flickr.com/photos/mrjoro/
+  quadrantids photo by Andrew Kicinski https://www.flickr.com/photos/andrewkicinski/
+  swans photo by Brent M https://www.flickr.com/photos/thewakingdragon/
+  winter raptor photo by Ingrid Taylar https://www.flickr.com/photos/taylar/
+  -->
+</body>
+</html>
+

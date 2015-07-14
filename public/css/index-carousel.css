@@ -1,7 +1,6 @@
-#carousel {
+#July-carousel {
   height: 399px;
   position: relative;
-  /*border-bottom: 4px solid rgba(1, 156, 209, 1);*/
   border-bottom: 2px solid rgba(1, 156, 209, 1);/*blue*/
   overflow: hidden;
   background-color: #232323;
@@ -68,9 +67,9 @@ h3.diva span.feature a:hover, h3.backup span.feature a:hover {
   text-decoration: underline;
 }
 /*_____________________________
-Carousel Buttons 
+July-Carousel Buttons 
 */
-#carousel button {
+#July-carousel button {
   width: 40px;
   height: 40px;
   position: absolute;
@@ -82,7 +81,7 @@ Carousel Buttons
   border: 1px solid #fff;
   color: rgba(0, 0, 0, .5);
 }
-#carousel button:focus {
+#July-carousel button:focus {
   outline: 0;
 }
 #caro-left {
@@ -110,7 +109,7 @@ span#right {
   top: 14px;
 }
 /*_____________________________
-Carousel Position Dots 
+July-Carousel Position Dots 
 */
 #pos-wrapper {
   position: relative;
@@ -137,3 +136,12 @@ Carousel Position Dots
   border: 1px solid rgba(255, 255, 255, .5);
 }
 #pos1 { left: 0; }  #pos2 { left: 40px; } #pos3 { left: 80px; } #pos4 { left: 120px; } #pos5 { left: 160px; } #pos6 { left: 200px; }
+/*______________________________
+hide / show classes
+*/
+.not-shown {
+  display: none;
+}
+.test {
+  height: 30px;
+}

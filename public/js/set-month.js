@@ -127,6 +127,15 @@ function displayMonthName() {
       $(this).addClass('not-shown')
     }
   })
+  var featured = $('.featured');
+  console.log(featured);
+  $(featured).each(function(i) {
+    if (($(this).attr('id')) === (monthName + '-featured')) {
+      $(this).removeClass('not-shown')
+    } else {
+      $(this).addClass('not-shown')
+    }
+  })
 }
 displayMonthName();
 

@@ -33,7 +33,6 @@ header {
   height: 87px;
   background-image: url(../images/SSGbanner.jpg);
   background-repeat: no-repeat;
-  /*border-bottom: 4px solid rgba(106, 165, 0, 1);*/
   border-bottom: 1px solid rgba(122, 188, 9, 1); /*leaf*/
 }
 h1 {
@@ -54,14 +53,12 @@ h2 {
   margin: 10px 20px;
   font-weight: bold;
   letter-spacing: .1em;
-  /*text-align: center;*/
 }
 header h2 {
   font-size: 100%;
   font-weight: normal;
   font-style: italic;
   margin: -28px 45px 0 45px;
-  /*background-color: rgba(255, 255, 255, .53);*/
 }
 h3 {
   font-size: 140%;
@@ -98,7 +95,6 @@ button.featured-for p {
   font-size: 150%;
 }
 nav {
-  /*background-color: rgba(1, 156, 209, .2);*/
   background-color: rgba(122, 188, 9, .2);/*leaf*/
   border-top: 3px solid rgba(188, 130, 9, 1);/*orange*/
 }
@@ -113,22 +109,24 @@ nav .main-tab {
   font-size: 150%;
   color: #000;
   text-decoration: none;
-  /*padding: 12px 40px;*/
-  /*cursor: default;*/
 }
 nav #main-tab-when {
   margin: 5px 0 0 5px;
 }
 nav .main-tab:hover {
   cursor: pointer;
-  /*text-decoration: underline;*/
 }
 nav .drop-tab {
-  padding: 12px 0 30px 0;
   width: 100%;
+  height: 2.2em;
   font-size: 120%;
-  /*border-bottom: 4px solid rgba(1, 156, 209, 1);*/
   border-bottom: 4px solid rgba(178, 72, 0, .9);/*chestnut*/
+}
+nav .drop-tab a {
+  color: #000;
+  text-decoration: none;
+  letter-spacing: .05em;
+  line-height: 2.2em;
 }
 
 /*COLORS*/
@@ -137,60 +135,54 @@ nav .drop-tab {
 /*rgba(165, 147, 0, 1) tan*/
 /*rgba(188, 130, 9, 1) orange brown*/
 /*rgba(178, 72, 0, 1) chestnut*/
-
 nav .month {
-  float: left;
-  text-align: left;
-  padding: 0 1% 0 1%;
+  width: 6%;
 }
 nav .location {
-  float: left;
-  text-align: left;
-  padding: 0 1% 0 2%;
+  width: 20%;
 }
 nav .attraction {
+  width: 12%;
+}
+nav .month, nav .location, nav .attraction {
   float: left;
-  text-align: left;
-  padding: 0 1% 0 2%;
+  text-align: center;
+  padding: 0 .55%;
+  border-right: 1px solid rgba(63, 178, 74, .6);/*olive*/
 }
-nav .drop-tab a {
-  color: #000;
-  text-decoration: none;
-  letter-spacing: .05em;
+nav .month:hover, nav .location:hover, nav .attraction:hover {
+  background-color: rgba(63, 178, 74, .2);/*olive*/
+  cursor: pointer;
 }
+nav .month:first-child, nav .location:first-child, nav .attraction:first-child {
+  border-left: none;
+}
+
 nav .month.current a {
   font-weight: bolder;
   color: rgba(178, 72, 0, 1);/*chestnut*/
 }
 nav .current-tab {
-  /*background-color: rgba(1, 156, 209, .7);*/
   background-color: rgba(63, 178, 74, .5);/*olive*/
 }
 nav .sleeping-tab {
-  /*background-color: rgba(1, 156, 209, .3);*/
   background-color: rgba(63, 178, 74, .2);/*olive*/
 }
 nav .sleeping-tab:hover {
-  /*background-color: rgba(1, 156, 209, .5);*/
   background-color: rgba(63, 178, 74, .4);/*olive*/
 }
 nav .real-box {
   clear: both;
-  /*background-color: rgba(1, 156, 209, .7);*/
   background-color: rgba(63, 178, 74, .5);/*olive*/
 }
 nav .ghost-box {
   clear: both;
   display: none;
 }
-nav .real-box a:hover {
-  text-decoration: underline;
-}
 #contact {
   float: right;
   margin-top: 40px;
   margin-right: 20px;
-  /*color: #cd3b08;*/
   color: #000;
   font-weight: bold;
 }
@@ -205,24 +197,26 @@ nav .real-box a:hover {
   margin-left: 0px;
 }
 #contact a {
-  /*color: #cd3b08;*/
   color: #000;
+  background-color: #fff;
+  padding: 4px 5px 3px 5px;
   text-decoration: none;
+  border-radius: 5px;
 }
 #contact a:visited {
-  /*color: #cd3b08;*/
 }
 #contact a:hover {
-  /*color: #5196d1;*/
-  text-decoration: underline;
+  background-color: rgba(1, 156, 209, 1);
+  color: #fff;
 }
-/*main {
-  background-image: url(../images/SSGbanner.jpg);
-  border-left: 1px solid rgba(81, 150, 309, 1);
-  border-right: 1px solid rgba(81, 150, 309, 1);
-}*/
+#contact a.kids {
+  background-color: yellow;
+}
+#contact a.kids:hover {
+  background-color: rgba(1, 156, 209, 1);
+}
 #secondary-nav {
-  float: left;
+  float: right;
   width: 14.5%;
   font-size: 120%;
   border: 2px solid rgba(1, 156, 209, 1);/*blue*/
@@ -243,7 +237,7 @@ nav .real-box a:hover {
 #secondary-nav ul li:hover {
   background-color: rgba(63, 178, 74, .2);/*olive*/
 }
-#featured {
+#January-featured, #July-featured {
   width: 85%;
   float: left;
 }
@@ -275,7 +269,6 @@ main .featured-for img {
   float: left;
   margin-right: 10px;
   border-radius: 5px;
-  /*margin-bottom: 20px;*/
 }
 a button.featured-for:hover {
   border-color: rgba(178, 72, 0, .5);/*chestnut*/
@@ -291,3 +284,25 @@ footer {
   width: 100%;
   font-size: 30%;
 }
+/*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+RESPONSIVE
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+@media screen and (min-width: 965px) {
+  .searchbox-wrapper {
+    margin-right: 4%;
+  }
+  .serc-topbox .left-box {
+    font-size: 16px;
+    margin-left: 12%;
+    margin-top: 3%;
+    padding-right: 5%;
+    width: 25%;
+    line-height: 1.2em
+  }
+  .serc-topbox .left-box h3 {
+    font-size: 22px;
+  }
+}
+/*month 965*/
+/*location 1040*/
+/*attraction 1025*/

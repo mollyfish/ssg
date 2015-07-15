@@ -110,9 +110,6 @@ nav .main-tab {
   color: #000;
   text-decoration: none;
 }
-nav #main-tab-when {
-  margin: 5px 0 0 5px;
-}
 nav .main-tab:hover {
   cursor: pointer;
 }
@@ -136,10 +133,22 @@ nav .drop-tab a {
 /*rgba(188, 130, 9, 1) orange brown*/
 /*rgba(178, 72, 0, 1) chestnut*/
 nav .month {
-  width: 6%;
+  font-size: 85%;
+  margin-top: 4px;
+}
+nav .month a {
+  padding: 0 .3em;
+  transition: font-size .3s;
+}
+nav #drop-tab-where {
+  margin: 0 auto;
 }
 nav .location {
   width: 20%;
+  margin: 0 auto;
+}
+nav .location a {
+  transition: font-size .3s;
 }
 nav .attraction {
   width: 12%;
@@ -287,20 +296,36 @@ footer {
 /*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 RESPONSIVE
 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
-@media screen and (min-width: 965px) {
-  .searchbox-wrapper {
-    margin-right: 4%;
+@media screen and (max-width: 965px) {
+  nav .month {
+    margin-top: 8px;
   }
-  .serc-topbox .left-box {
-    font-size: 16px;
-    margin-left: 12%;
-    margin-top: 3%;
-    padding-right: 5%;
-    width: 25%;
-    line-height: 1.2em
+  nav .month a {
+    font-size: 84%;
   }
-  .serc-topbox .left-box h3 {
-    font-size: 22px;
+  nav .location {
+    margin-top: 4px;
+  }
+  nav .location a {
+    font-size: 84%;
+  }
+}
+@media screen and (max-width: 810px) {
+  nav .location {
+    margin-top: 8px;
+  }
+  nav .location a {
+    font-size: 60%;
+  }
+}
+@media screen and (max-width: 770px) {
+  nav .month {
+    margin-top: 12px;
+  }
+  nav .month a {
+    font-size: 60%;
+    /*padding-top: 2em;*/
+    /*color: red;*/
   }
 }
 /*month 965*/

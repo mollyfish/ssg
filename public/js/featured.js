@@ -96,7 +96,7 @@ $(function() {
     clearInterval(intervalID);
     console.log('should stop');
   };
-  startRotation();
+  // startRotation();
 
   $('#July-carousel').on('click', 'button#caro-right', function() {
     console.log('go right');

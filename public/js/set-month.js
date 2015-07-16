@@ -128,7 +128,6 @@ function displayMonthName() {
     }
   })
   var featured = $('.featured');
-  console.log(featured);
   $(featured).each(function(i) {
     if (($(this).attr('id')) === (monthName + '-featured')) {
       $(this).removeClass('not-shown')
@@ -138,5 +137,10 @@ function displayMonthName() {
   })
 }
 displayMonthName();
+
+$('.month').on('click', function() {
+  $('.month').removeClass('current')
+  $(this).addClass('current');
+})
 
 });

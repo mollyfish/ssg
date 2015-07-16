@@ -176,15 +176,12 @@ nav .month:first-child, nav .location:first-child, nav .attraction:first-child {
 }
 
 nav .month.current a {
-  font-weight: bolder;
   color: rgba(178, 72, 0, 1);/*chestnut*/
 }
 nav .location.current a {
-  font-weight: bolder;
   color: rgba(178, 72, 0, 1);/*chestnut*/
 }
 nav .attraction.current a {
-  font-weight: bolder;
   color: rgba(178, 72, 0, 1);/*chestnut*/
 }
 nav .current-tab {

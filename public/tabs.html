@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="keywords" content="Salish sea, puget sound, nature guide, seattle, washington, seasonal, naturalist, olympic peninsula, summer, fall, autumn, winter, spring, hiking, birding"/>
+  <title>Salish Seasonal Guide :: Home</title>
+<!-- CSS
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<link type="text/css" href="css/nav.css" rel="stylesheet"/>
+<link type="text/css" href="css/index-carousel.css" rel="stylesheet"/>
+<link type="text/css" href="css/tabs.css" rel="stylesheet"/>
+<!-- JAVASCRIPT
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<script src="js/deps/jquery.js"></script>
+<script src="js/nav.js"></script>
+<script src="js/featured.js"></script>
+<script src="js/set-month.js"></script>
+</head>
+<!-- CONTENT
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<body>
+  <header>
+    <div id="contact">
+      <form id="search-box">
+        <input type="text" name="search" id="search" placeholder="Search">
+        <button type="submit" id="search-go">Go</button>
+      </form>
+      <a href="#" class="kids">For Kids</a> <a href="#">Blog</a> <a href="#">About</a> <a href="#">Contact</a> <a href="#">FAQ</a>
+    </div>
+    <h1>Salish Sea<span>sonal Guide</span></h1><h2>Where to go and what to see, in and around the Salish Sea</h2>
+  </header>
+  <section id="July-carousel" class="carousel"> 
+    <div class="caro-item special">
+      <h3 id="caro-0-link" class="caro-link">Featured for <span class="current-month-name"></span>:</h3>
+    </div>
+    <a href="#oystercatchers" class="box-link backup" id="box-1">
+      <div class="caro-item backup" id="caro-1">
+      <h3 id="caro-1-link" class="caro-link backup">Featured for <span class="current-month-name"></span>: <span class="feature">Oystercatchers</span></h3>
+      <img id="caro-1-image" src="images/birdwatching.png" alt="an oystercatcher on a rock by the sea">
+      </div>
+    </a>
+    <a href="#farmers" class="box-link backup" id="box-2">
+      <div class="caro-item backup" id="caro-2">
+        <h3 id="caro-2-link" class="caro-link backup">Featured for <span class="current-month-name"></span>: <span class="feature">Farmers Markets</span></h3>
+        <img id="caro-1-image" src="images/farmersmarkets.png" alt="a blooming khardoun">
+      </div>
+    </a>
+    <a href="#orcas" class="box-link backup" id="box-3">
+      <div class="caro-item backup" id="caro-3">
+      <h3 id="caro-3-link" class="caro-link backup">Featured for <span class="current-month-name"></span>: <span class="feature">Orcas</span></h3>
+      <img id="caro-1-image" src="images/orcas.png" alt="two orcas spouting">
+      </div>
+    </a>
+    <a href="#sunsets" class="box-link backup" id="box-4">
+      <div class="caro-item backup" id="caro-4">
+      <h3 id="caro-4-link" class="caro-link backup">Featured for <span class="current-month-name"></span>: <span class="feature">Sunsets</span></h3>
+      <img id="caro-1-image" src="images/sunsets.png" alt="a dramatic red sunset">
+      </div>
+    </a>
+    <a href="#tidepools" class="box-link backup" id="box-5">
+      <div class="caro-item backup" id="caro-5">
+      <h3 id="caro-5-link" class="caro-link backup">Featured for <span class="current-month-name"></span>: <span class="feature">Tidepools</span></h3>
+      <img id="caro-1-image" src="images/tidepools.png" alt="mussels and sea anemones in a rocky crevice">
+      </div>
+    </a>
+    <a href="#seals" class="box-link backup" id="box-6">
+      <div class="caro-item backup" id="caro-6">
+      <h3 id="caro-6-link" class="caro-link backup">Featured for July: <span class="feature">Harbor Seals</span></h3>
+      <img id="caro-1-image" src="images/marinemammals.png" alt="a Harbor seal on a rock">
+      </div>
+    </a>
+    <div id="pos-wrapper">
+      <div class="pos" id="pos1"></div>
+      <div class="pos" id="pos2"></div>
+      <div class="pos" id="pos3"></div>
+      <div class="pos" id="pos4"></div>
+      <div class="pos" id="pos5"></div>
+      <div class="pos" id="pos6"></div>
+    </div>
+    <button id="caro-left"><span id="left">«</span></button>
+    <button id="caro-right"><span id="right">»</span></button>
+  </section>
+  <section id="tabs">
+    <div class="column-wrapper">
+
+      <div class="column" id="col1">
+        <h3>When to Go</h3>
+          <ol class="months">
+            <li class="month inner-column">January</li>
+            <li class="month inner-column">February</li>
+            <li class="month inner-column">March</li>
+            <li class="month inner-column">April</li>
+          </ol>
+          <ol class="months">
+            <li class="month inner-column">May</li>
+            <li class="month inner-column">June</li>
+            <li class="month inner-column">July</li>
+            <li class="month inner-column">August</li>
+          </ol>
+          <ol class="months">
+            <li class="month inner-column">September</li>
+            <li class="month inner-column">October</li>
+            <li class="month inner-column">November</li>
+            <li class="month inner-column">December</li>
+          </ol>
+      </div>
+      <div class="column" id="col2">
+        <h3>Where to Go</h3>
+          <ol class="locations">
+            <li class="location inner-column">Puget Sound</li>
+            <li class="location inner-column sublocation">San Juan Islands</li>
+            <li class="location inner-column sublocation">Central Sound</li>
+            <li class="location inner-column sublocation">South Sound</li>
+            <li class="location inner-column sublocation">Hood Canal</li>
+          </ol>
+          <ol class="locations">
+            <li class="location inner-column">Strait of Georgia</li>
+            <li class="location inner-column sublocation">Courtenay</li>
+            <li class="location inner-column sublocation">Nanaimo</li>
+            <li class="location inner-column sublocation">Gulf Islands</li>
+            <li class="location inner-column sublocation">Vancouver</li>
+            <li class="location inner-column sublocation">Jervis Inlet</li>
+          </ol>
+          <ol class="locations">
+            <li class="location inner-column">Str. of Juan de Fuca</li>
+            <li class="location inner-column sublocation">Quimper Peninsula</li>
+            <li class="location inner-column sublocation">Port Angeles</li>
+            <li class="location inner-column sublocation">Neah Bay</li>
+            <li class="location inner-column sublocation">Victoria</li>
+            <li class="location inner-column sublocation">Port Renfrew</li>
+          </ol>
+          <ol class="locations">
+            <li class="location inner-column">Outer Coast</li>
+            <li class="location inner-column sublocation">Ozette</li>
+            <li class="location inner-column sublocation">La Push</li>
+            <li class="location inner-column sublocation">Kalaloch</li>
+            <li class="location inner-column sublocation">Ocean Beaches</li>
+          </ol>
+      </div>
+      <div class="column" id="col3">
+        <h3>What to See</h3>
+        <ol class="attractions">
+          <li class="attraction inner-column">For Kids</li>
+          <li class="attraction inner-column">Birds</li>
+          <li class="attraction inner-column">Mammals</li>
+        </ol>
+        <ol class="attractions">
+          <li class="attraction inner-column">Tidepools</li>
+          <li class="attraction inner-column">Plants</li>
+          <li class="attraction inner-column">Fish</li>
+        </ol>
+        <ol class="attractions">
+          <li class="attraction inner-column">Reptiles etc.</li>
+          <li class="attraction inner-column">Insects</li>
+          <li class="attraction inner-column">More...</li>
+        </ol>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

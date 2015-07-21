@@ -49,7 +49,7 @@ $(function() {
       $('.box-link.diva').removeClass('diva').addClass('backup');
       $('#box-' + next).removeClass('backup').addClass('diva');
     } else {
-      next = 6;
+      next = caroItems.length;
       $('#caro-' + next).removeClass('backup').addClass('diva');
       $('#caro-' + num).removeClass('diva').addClass('backup');
       $('.caro-link.diva').removeClass('diva');

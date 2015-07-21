@@ -127,7 +127,20 @@ function displayMonthName() {
       $(this).addClass('not-shown')
     }
   })
+  var featured = $('.featured');
+  $(featured).each(function(i) {
+    if (($(this).attr('id')) === (monthName + '-featured')) {
+      $(this).removeClass('not-shown')
+    } else {
+      $(this).addClass('not-shown')
+    }
+  })
 }
 displayMonthName();
+
+$('.month').on('click', function() {
+  $('.month').removeClass('current')
+  $(this).addClass('current');
+})
 
 });

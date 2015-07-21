@@ -1,7 +1,8 @@
 'use strict';
 $(function() {
   var toPop;
-  var initialCaro = Math.floor((Math.random() * 6) + 1);
+  var caroItems = $('.box-link');
+  var initialCaro = Math.floor((Math.random() * caroItems.length) + 1);
   var intervalID;
 
   function caroStart(num) {
@@ -9,11 +10,12 @@ $(function() {
     $('#caro-' + num).removeClass('backup').addClass('diva');
     $('#caro-' + num + '-link').removeClass('backup').addClass('diva');
     $('#pos' + num).addClass('diva');
+    applyStyles();
   };
 
   function rotateRight(num) {
     var next = num + 1;
-    if (next < 7) {
+    if (next < (caroItems.length + 1)) {
       $('.caro-item.diva').removeClass('diva').addClass('backup');
       $('#caro-' + next).removeClass('backup').addClass('diva');
       $('.caro-link.diva').removeClass('diva');
@@ -70,127 +72,54 @@ $(function() {
     $('#box-' + num).removeClass('backup').addClass('diva');
   };
 
-  if (initialCaro === 1) {
-    caroStart(1);
-  };
-  if (initialCaro === 2) {
-    caroStart(2);
-  };
-  if (initialCaro === 3) {
-    caroStart(3);
-  };
-  if (initialCaro === 4) {
-    caroStart(4);
-  };
-  if (initialCaro === 5) {
-    caroStart(5);
-  };
-  if (initialCaro === 6) {
-    caroStart(6);
+  function autoRotate() {
+    toPop = $('.box-link.diva');
+    var numToPop = parseInt(($(toPop).attr('id')).slice(4));
+    rotateRight(numToPop);
   };
 
   function startRotation() {
     intervalID = window.setInterval(autoRotate, 6000);
   };
+
   function stopRotation() {
     clearInterval(intervalID);
-    console.log('should stop');
   };
-  startRotation();
+
+  function applyStyles() {
+    var wrapper = $('#pos-wrapper');
+    var dots = $('.pos');
+    $(wrapper).css('width', ((dots.length) * 35) - 13);
+    // 35 is dot width plus margin-left, -13 is to remove margin-left width for last dot
+    $(dots).each(function(i) {
+      $('.pos').css('margin-left', function(i) {
+      return i * 35;
+      //looks like only 15 b/c dot width is 20
+      });
+    });
+    $('.pos').addClass('position-dot');
+  }
 
   $('#July-carousel').on('click', 'button#caro-right', function() {
-    console.log('go right');
     toPop = $(this).siblings('.diva');
-    console.log(toPop);
-    if ($(toPop).attr('id') === 'box-1') {
-      rotateRight(1);
-    }
-    if ($(toPop).attr('id') === 'box-2') {
-      rotateRight(2);
-    }
-    if ($(toPop).attr('id') === 'box-3') {
-      rotateRight(3);
-    }
-    if ($(toPop).attr('id') === 'box-4') {
-      rotateRight(4);
-    }
-    if ($(toPop).attr('id') === 'box-5') {
-      rotateRight(5);
-    } 
-    if ($(toPop).attr('id') === 'box-6') {
-      rotateRight(6);
-    }
+    var numToPop = parseInt(($(toPop).attr('id')).slice(4));
+    rotateRight(numToPop);
     stopRotation();
   });
 
   $('#July-carousel').on('click', 'button#caro-left', function() {
-    console.log('go left');
     toPop = $(this).siblings('.diva');
-    if ($(toPop).attr('id') === 'box-6') {
-      rotateLeft(6);
-    }
-    if ($(toPop).attr('id') === 'box-5') {
-      rotateLeft(5);
-    }
-    if ($(toPop).attr('id') === 'box-4') {
-      rotateLeft(4);
-    }
-    if ($(toPop).attr('id') === 'box-3') {
-      rotateLeft(3);
-    }
-    if ($(toPop).attr('id') === 'box-2') {
-      rotateLeft(2);
-    } 
-    if ($(toPop).attr('id') === 'box-1') {
-      rotateLeft(1);
-    }
+    var numToPop = parseInt(($(toPop).attr('id')).slice(4));
+    rotateLeft(numToPop);
     stopRotation();
   });
 
-  $('#July-carousel').on('click', 'div#pos1', function() {
-    posChange(1);
-    stopRotation();
-  });
-  $('#July-carousel').on('click', 'div#pos2', function() {
-    posChange(2);
-    stopRotation();
-  });
-  $('#July-carousel').on('click', 'div#pos3', function() {
-    posChange(3);
-    stopRotation();
-  });
-  $('#July-carousel').on('click', 'div#pos4', function() {
-    posChange(4);
-    stopRotation();
-  });
-  $('#July-carousel').on('click', 'div#pos5', function() {
-    posChange(5);
-    stopRotation();
-  });
-  $('#July-carousel').on('click', 'div#pos6', function() {
-    posChange(6);
+  $('#July-carousel').on('click', 'div.pos', function() {
+    var num = parseInt(($(this).attr('id')).slice(3));
+    posChange(num);
     stopRotation();
   });
 
-  function autoRotate() {
-    toPop = $('.box-link.diva');
-    if ($(toPop).attr('id') === 'box-1') {
-      rotateRight(1);
-    }
-    if ($(toPop).attr('id') === 'box-2') {
-      rotateRight(2);
-    }
-    if ($(toPop).attr('id') === 'box-3') {
-      rotateRight(3);
-    }
-    if ($(toPop).attr('id') === 'box-4') {
-      rotateRight(4);
-    }
-    if ($(toPop).attr('id') === 'box-5') {
-      rotateRight(5);
-    } 
-    if ($(toPop).attr('id') === 'box-6') {
-      rotateRight(6);
-    }
-  };
+  caroStart(initialCaro);
+  startRotation();
 });

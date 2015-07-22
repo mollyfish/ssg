@@ -79,7 +79,7 @@ $(function() {
   };
 
   function startRotation() {
-    intervalID = window.setInterval(autoRotate, 6000);
+    intervalID = window.setInterval(autoRotate, 10000);
   };
 
   function stopRotation() {

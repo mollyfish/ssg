@@ -1,0 +1,114 @@
+/* """"" THESE STYLES REMOVE BROWSER DEFAULTS - DO NOT CHANGE OR REMOVE """"" */
+html, body, header, nav, main, section, aside, ul, ol, li, p, 
+h1, h2, h3, h4, h5, h6, 
+form, fieldset, a {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+font-size: 100.01%; /* Fix for some browser bugs */
+background-color: #ffffff;
+}
+h1, h2, h3, h4, h5, h6 {
+font-weight: normal;
+font-size: 100%;
+}
+html {
+  overflow-y: scroll;
+  height: 100%;
+}
+/* --> END OF BROWSER DEFAULT REMOVAL */
+
+/*COLORS*/
+/*rgba(63, 178, 74, 1) olive green*/
+/*rgba(122, 188, 9, 1) leaf green*/
+/*rgba(165, 147, 0, 1) tan*/
+/*rgba(188, 130, 9, 1) orange brown*/
+/*rgba(178, 72, 0, 1) chestnut*/
+
+header {
+  background-color: #100b04;
+  height: 87px;
+  background-image: url(../images/SSGbanner2.jpg);
+  background-repeat: no-repeat;
+  border-bottom: 2px solid rgba(178, 72, 0, 1); /*chestnut*/
+}
+h1 {
+  font-size: 250%;
+  letter-spacing: .02em;
+  color: #eee;
+  padding: 12px 45px 30px 45px;
+  background-color: rgba(1, 1, 1, .7);
+  font-weight: bolder;
+}
+h1 span {
+  font-weight: normal;
+  letter-spacing: .15em;
+  margin-left: 5px;
+}
+h2 {
+  font-size: 210%;
+  margin: 10px 20px;
+  font-weight: bold;
+  letter-spacing: .1em;
+  color: #eee;
+}
+header h2 {
+  font-size: 100%;
+  font-weight: normal;
+  font-style: italic;
+  margin: -28px 45px 0 45px;
+}
+h3 {
+  font-size: 140%;
+  font-style: italic;
+  margin-bottom: 10px;
+}
+h4 {
+  font-size: 120%;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+footer {
+  text-align: center;
+  clear: both;
+}
+footer p#contact-links {
+  padding: 20px 0 10px 0;
+  font-size: 100%;
+}
+footer p#contact-links a {
+  color: #fff;
+  font-weight: bold;
+  background-color: rgba(178, 72, 0, 1);/*chestnut*/
+  padding: 4px 6px 3px 6px;
+  margin: 0 2px;
+  text-decoration: none;
+  border-radius: 5px;
+  letter-spacing: .1em;
+}
+footer p#contact-links a:visited {
+}
+footer p#contact-links a:hover {
+  background-color: rgba(122, 188, 9, 1);
+  color: #000;
+}
+footer p#copyright {
+  padding: 10px;
+  font-size: 30%;
+}
+/*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+RESPONSIVE
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+/*@media screen and (max-width: 1076px) {
+  nav .month {
+    margin-top: 8px;
+  }
+  nav .month a {
+    font-size: 84%;
+  }
+}*/

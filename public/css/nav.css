@@ -1,223 +1,38 @@
-/* """"" THESE STYLES REMOVE BROWSER DEFAULTS - DO NOT CHANGE OR REMOVE """"" */
-html, body, header, nav, main, section, aside, ul, ol, li, p, 
-h1, h2, h3, h4, h5, h6, 
-form, fieldset, a {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-family: Arial, Helvetica, sans-serif;
-}
-body {
-font-size: 100.01%; /* Fix for some browser bugs */
-background-color: #ffffff;
-}
-h1, h2, h3, h4, h5, h6 {
-font-weight: normal;
-font-size: 100%;
-}
-html {
-  overflow-y: scroll;
-  height: 100%;
-}
-/* --> END OF BROWSER DEFAULT REMOVAL */
-
-/*COLORS*/
-/*rgba(63, 178, 74, 1) olive green*/
-/*rgba(122, 188, 9, 1) leaf green*/
-/*rgba(165, 147, 0, 1) tan*/
-/*rgba(188, 130, 9, 1) orange brown*/
-/*rgba(178, 72, 0, 1) chestnut*/
-
-header {
-  background-color: #100b04;
-  height: 87px;
-  background-image: url(../images/SSGbanner2.jpg);
-  background-repeat: no-repeat;
-  /*border-bottom: 2px solid rgba(122, 188, 9, 1); /*leaf*/
-}
-h1 {
-  font-size: 250%;
-  letter-spacing: .02em;
-  color: #eee;
-  padding: 12px 45px 30px 45px;
-  background-color: rgba(1, 1, 1, .7);
-  font-weight: bolder;
-}
-h1 span {
-  font-weight: normal;
-  letter-spacing: .15em;
-  margin-left: 5px;
-}
-h2 {
-  font-size: 210%;
-  margin: 10px 20px;
-  font-weight: bold;
-  letter-spacing: .1em;
-  color: #eee;
-}
-header h2 {
-  font-size: 100%;
-  font-weight: normal;
-  font-style: italic;
-  margin: -28px 45px 0 45px;
-}
-h3 {
-  font-size: 140%;
-  font-style: italic;
-  margin-bottom: 10px;
-}
-.places {
-  border-right: 1px solid #efefef;
-}
-.places h3, .things h3 {
-  color: #fff;
-  letter-spacing: .05em;
-  background-image: url(../images/gradient.png);
-  background-position: left;
-  background-repeat: repeat-y;
-  border-top-left-radius: 15px;
-  border-bottom-left-radius: 15px;
-  padding: 4px 2px 2px 8px;
-  width: 90%;
-  margin: 20px 0;
-}
-h4 {
-  font-size: 120%;
-}
-a {
-  text-decoration: none;
-  color: #000;
-}
-button.featured-for h4 {
-  font-size: 170%;
-  font-weight: bold;
-}
-button.featured-for p {
-  font-size: 150%;
-}
-nav {
-  background-color: rgba(122, 188, 9, .2);/*leaf*/
-  border-top: 3px solid rgba(188, 130, 9, 1);/*orange*/
-}
-nav .main-tab {
-  margin: 5px 0 0 5px;
-  width: 32.5%;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-  float: left;
-  text-align: center;
-  padding: 10px 0;
-  font-size: 150%;
-  color: #000;
-  text-decoration: none;
-  line-height: 1.2em;
-  transition: font-size .3s;
-}
-nav .main-tab:hover {
-  cursor: pointer;
-}
-nav .drop-tab {
-  width: 100%;
-  height: 2.2em;
-  font-size: 120%;
-  border-bottom: 4px solid rgba(178, 72, 0, .9);/*chestnut*/
-}
-nav .drop-tab a {
-  color: #000;
-  text-decoration: none;
-  letter-spacing: .05em;
-  line-height: 2.2em;
-}
-/*COLORS*/
-/*rgba(63, 178, 74, 1) olive green*/
-/*rgba(122, 188, 9, 1) leaf green*/
-/*rgba(165, 147, 0, 1) tan*/
-/*rgba(188, 130, 9, 1) orange brown*/
-/*rgba(178, 72, 0, 1) chestnut*/
-#line-go-below {
-  display: none;
-}
-#stay-in-line {
-  display: inline;
-}
-nav .month {
-  font-size: 88%;
-  margin-top: 4px;
-}
-nav .month a {
-  padding: 0 .3em;
-  transition: font-size .3s;
-}
-nav .location {
-  width: 20%;
-  margin-top: 2px;
-}
-nav .location a {
-  transition: font-size .3s;
-}
-nav .attraction {
-  width: 12%;
-  margin-top: 2px;
-}
-nav .attraction a {
-  transition: font-size .3s;
-}
-nav .month, nav .location, nav .attraction {
-  float: left;
-  text-align: center;
-  padding: 0 .55%;
-  border-right: 1px solid rgba(63, 178, 74, .6);/*olive*/
-}
-nav .month:hover, nav .location:hover, nav .attraction:hover {
-  background-color: rgba(63, 178, 74, .2);/*olive*/
-  cursor: pointer;
-}
-nav .month:first-child, nav .location:first-child, nav .attraction:first-child {
-  border-left: none;
-}
-
-nav .month.current a {
-  color: rgba(178, 72, 0, 1);/*chestnut*/
-}
-nav .location.current a {
-  color: rgba(178, 72, 0, 1);/*chestnut*/
-}
-nav .attraction.current a {
-  color: rgba(178, 72, 0, 1);/*chestnut*/
-}
-nav .current-tab {
-  background-color: rgba(63, 178, 74, .6);/*olive*/
-}
-nav .sleeping-tab {
-  background-color: rgba(63, 178, 74, .2);/*olive*/
-}
-nav .sleeping-tab:hover {
-  background-color: rgba(63, 178, 74, .4);/*olive*/
-}
-nav .real-box {
-  clear: both;
-  background-color: rgba(63, 178, 74, .5);/*olive*/
-}
-nav .ghost-box {
-  clear: both;
-  display: none;
-}
 #contact {
   float: right;
-  margin-top: 40px;
-  margin-right: 20px;
+/*  margin-top: 40px;
+  margin-right: 20px;*/
   color: #000;
   font-weight: bold;
+  width: 30%;
 }
 #contact form#search-box {
-  display: inline;
-  float: left;
-  padding-right: 20px;
-  padding-bottom: 0px;
+  /*display: inline;*/
+  /*float: left;*/
+  /*padding-right: 20px;*/
+  /*padding-bottom: 0px;*/
+  position: absolute;
+  right: 20px;
+  top: 15px;
+}
+#contact form#search-box input {
+  width: 200px;
+  height: 18px;
+  font-size: .8em;
+  border-radius: 5px;
+  border: 2px solid rgba(1, 156, 209, 1);
+  padding-left: 5px;
 }
 #contact button#search-go {
-  padding: 3px 3px 4px 3px;
-  margin-left: 0px;
+  padding: 3px 5px 4px 4px;
+  border-radius: 5px;
+  border: 2px solid rgba(122, 188, 9, 1);
+  background-color: rgba(178, 72, 0, 1);
+  margin-left: 5px;
+}
+#contact button#search-go:hover {
+  color: #fff;
+  cursor: pointer;
 }
 #contact a {
   color: #000;
@@ -225,6 +40,8 @@ nav .ghost-box {
   padding: 4px 5px 3px 5px;
   text-decoration: none;
   border-radius: 5px;
+  position: absolute;
+  top: 49px;
 }
 #contact a:visited {
 }
@@ -238,171 +55,31 @@ nav .ghost-box {
 #contact a.kids:hover {
   background-color: rgba(1, 156, 209, 1);
 }
-#secondary-nav {
-  float: right;
-  width: 14.5%;
-  font-size: 120%;
-  border: 2px solid rgba(1, 156, 209, 1);/*blue*/
-  border-left-width: 1px;
-  border-right: none;
-  margin-top: 20px;
+#kids-header {
+  right: 256px;
 }
-#secondary-nav ul {
-  list-style-type: none;
+#blog-header {
+  right: 205px;
 }
-#secondary-nav ul li {
-  padding: .5em .5em .5em 1em;
-  border-bottom: 1px solid rgba(1, 156, 209, .5);/*blue*/
+#about-header {
+  right: 144px;
 }
-#secondary-nav ul li:last-child {
-  border-bottom: none;
+#contact-header {
+  right: 69px;
 }
-#secondary-nav ul li:hover {
-  background-color: rgba(63, 178, 74, .2);/*olive*/
-}
-#January-featured, #July-featured {
-  width: 85%;
-  float: left;
-}
-#featured-columns {
-  width: 100%;
-}
-#featured-columns .places {
-  width: 48%;
-  float: left;
-  margin: 0 0 0 20px;
-}
-#featured-columns .things {
-  width: 48%;
-  float: left;
-  margin: 0 0 0 20px;
-}
-main .featured-for {
-  width: 95%;
-  padding: 20px;
-  clear: both;
-  border: 1px solid rgba(1, 156, 209, .8);/*blue*/
-  border-radius: 15px;
-  margin-bottom: 15px;
-  background-color: none;
-  background: none;
-  text-align: left;
-}
-main .featured-for img {
-  float: left;
-  margin-right: 10px;
-  border-radius: 5px;
-}
-a button.featured-for:hover {
-  border-color: rgba(178, 72, 0, .5);/*chestnut*/
-  background-color: rgba(63, 178, 74, .2);/*olive*/
-  cursor: pointer;
-}
-footer {
-  text-align: center;
-  clear: both;
-}
-footer p#contact-links {
-  padding: 20px 0 10px 0;
-  font-size: 100%;
-}
-footer p#contact-links a {
-  color: #fff;
-  font-weight: bold;
-  background-color: rgba(178, 72, 0, 1);/*chestnut*/
-  padding: 4px 6px 3px 6px;
-  margin: 0 2px;
-  text-decoration: none;
-  border-radius: 5px;
-  letter-spacing: .1em;
-}
-footer p#contact-links a:visited {
-}
-footer p#contact-links a:hover {
-  background-color: rgba(122, 188, 9, 1);
-  color: #000;
-}
-footer p#copyright {
-  padding: 10px;
-  font-size: 30%;
+#faq-header {
+  right: 20px;
 }
 /*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 RESPONSIVE
 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
-@media screen and (max-width: 994px) {
-  nav .month {
-    margin-top: 8px;
-  }
-  nav .month a {
-    font-size: 84%;
-  }
+@media screen and (max-width: 1076px) {
+ /* #contact form#search-box {
+    display: block;
+    float: none;
+    margin-top: -30px;
+    margin-bottom: 20px;
+    padding-right: 20px;
+    padding-bottom: 0px;
+  }*/
 }
-@media screen and (max-width: 965px) {
-  nav .location {
-    margin-top: 4px;
-  }
-  nav .location a {
-    font-size: 84%;
-  }
-}
-@media screen and (max-width: 840px) {
-  nav .attraction {
-    margin-top: 4px;
-  }
-  nav .attraction a {
-    font-size: 84%;
-  }
-  nav .main-tab {
-    font-size: 110%;
-    line-height: 1.6em;
-    width: 30.5%;
-  }
-}
-@media screen and (max-width: 810px) {
-  nav .location {
-    margin-top: 8px;
-  }
-  nav .location a {
-    font-size: 60%;
-  }
-}
-@media screen and (max-width: 770px) {
-  nav .month {
-    margin-top: 10px;
-  }
-  nav .month a {
-    font-size: 60%;
-  }
-}
-@media screen and (max-width: 645px) {
-  nav .attraction {
-    margin-top: 10px;
-  }
-  nav .attraction a {
-    font-size: 60%;
-  }
-}
-@media screen and (max-width: 605px) {
-  #drop-tab-when {
-    width: 100%;
-    height: 3.6em;
-  }
-  #stay-in-line {
-    display: none;
-  }
-  #line-go-below {
-    display: inline;
-    float: left;
-    width: 100%;
-    /*margin-top: 6px;*/
-    /*padding-bottom: 10px;*/
-    /*line-height: 1.4em;*/
-    border-top: 1px solid rgba(63, 178, 74, .6);/*olive*/
-  }
-  #line-go-below a {
-    /*margin-top: 10em;*/
-  }
-}
-/*month 965*/
-/*location 1040*/
-/*attraction 1025*/

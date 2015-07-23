@@ -31,16 +31,16 @@ html {
 header {
   background-color: #100b04;
   height: 87px;
-  background-image: url(../images/SSGbanner.jpg);
+  background-image: url(../images/SSGbanner2.jpg);
   background-repeat: no-repeat;
-  border-bottom: 1px solid rgba(122, 188, 9, 1); /*leaf*/
+  /*border-bottom: 2px solid rgba(122, 188, 9, 1); /*leaf*/
 }
 h1 {
   font-size: 250%;
   letter-spacing: .02em;
-  color: #000;
+  color: #eee;
   padding: 12px 45px 30px 45px;
-  background-color: rgba(255, 255, 255, .53);
+  background-color: rgba(1, 1, 1, .7);
   font-weight: bolder;
 }
 h1 span {
@@ -53,6 +53,7 @@ h2 {
   margin: 10px 20px;
   font-weight: bold;
   letter-spacing: .1em;
+  color: #eee;
 }
 header h2 {
   font-size: 100%;
@@ -308,11 +309,12 @@ footer p#contact-links {
 footer p#contact-links a {
   color: #fff;
   font-weight: bold;
-  background-color: rgba(1, 156, 209, 1);
+  background-color: rgba(178, 72, 0, 1);/*chestnut*/
   padding: 4px 6px 3px 6px;
   margin: 0 2px;
   text-decoration: none;
   border-radius: 5px;
+  letter-spacing: .1em;
 }
 footer p#contact-links a:visited {
 }

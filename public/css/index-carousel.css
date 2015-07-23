@@ -1,9 +1,10 @@
 #July-carousel {
   height: 399px;
   position: relative;
-  border-bottom: 1px solid rgba(122, 188, 9, 1);/*leaf*/
+  /*border-bottom: 1px solid rgba(122, 188, 9, 1);/*leaf*/
   overflow: hidden;
   background-color: #232323;
+  /*margin-bottom: 30px;*/
 }
 .caro-item {
   height: 399px;
@@ -39,13 +40,13 @@
   padding: 10px 15px 10px 45px;
   width: 100%;
   letter-spacing: .1em;
-  background-color: rgba(255, 255, 255, .5);
+  background-color: rgba(255, 255, 255, .7);
   font-size: 220%;
-  letter-spacing: .2em;
+  letter-spacing: .15em;
   position: absolute;
   top: 0px;
   left: 0px;
-  border-bottom: 1px solid rgba(255, 255, 255, .5);
+  border-bottom: 2px solid rgba(1, 156, 209, 1);/*blue*/
   border-top: 2px solid rgba(178, 72, 0, 1);/*chestnut*/
 }
 #caro-0-link {

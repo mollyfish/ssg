@@ -9,6 +9,13 @@ main h2 {
   padding: 6px 2px 6px 12px;
   margin: 15px 0 5px 20px;
 }
+main h2 a.next-month {
+  font-size: 50%;
+  letter-spacing: 0;
+}
+main h2 a.next-month:hover {
+  text-decoration: underline;
+}
 .places {
   border-right: 1px solid #efefef;
 }

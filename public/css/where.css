@@ -1,0 +1,139 @@
+#location-bar {
+  height: 55px;
+  background-image: url(../images/grn-gradient.png);
+  background-position: left;
+  background-repeat: repeat-y;
+  border-top-left-radius: 35px;
+  border-bottom-left-radius: 35px;
+  margin: 10px 0 5px 20px;
+  padding: 8px 25px 8px 25px;
+  position: relative;
+}
+#location-bar h2 {
+  color: #000;
+  font-style: italic;
+  margin: 0;
+  padding: 0;
+}
+a.next-place, a.prev-place {
+  font-size: 80%;
+  letter-spacing: 0;
+  position: absolute;
+  bottom: 8px;
+}
+a.prev-place {
+  text-align: left;
+  left: 30px;
+}
+a.next-place {
+  text-align: right;
+  left: 245px;
+}
+a.next-place:hover, a.prev-place:hover {
+  text-decoration: underline;
+}
+main h3.superlocation {
+  margin: 10px 0 0 20px;
+  font-size: 100%;
+}
+main h3.superlocation a:hover {
+  text-decoration: underline;
+}
+.things {
+  border-right: 1px solid #efefef;
+}
+.times h3, .things h3 {
+  color: #fff;
+  letter-spacing: .05em;
+  background-image: url(../images/gradient.png);
+  background-position: left;
+  background-repeat: repeat-y;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  padding: 4px 2px 2px 12px;
+  width: 90%;
+  margin: 10px 0 15px 0;
+  clear: left;
+}
+#featured-columns {
+  width: 100%;
+}
+#featured-columns .times {
+  width: 47%;
+  float: left;
+  margin: 0 0 0 20px;
+}
+#featured-columns .things {
+  width: 47%;
+  float: left;
+  margin: 0 0 0 20px;
+}
+main .featured-for {
+  width: 95%;
+  padding: 20px;
+  clear: both;
+  border: 1px solid rgba(122, 188, 9, .7);/*leaf*/
+  border-radius: 15px;
+  margin-bottom: 15px;
+  background-color: none;
+  background: none;
+  text-align: left;
+}
+main .featured-for div.icons {
+  float: right;
+  width: 69px;
+  margin: 0px 0px 10px 10px;
+}
+main .featured-for img {
+  float: left;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+main .featured-for div.icons img {
+  float: right;
+  margin: 0 0 10px 0;
+  border-radius: 0;
+}
+button.featured-for h4 {
+  font-size: 170%;
+  font-weight: bold;
+}
+button.featured-for p {
+  font-size: 150%;
+}
+a button.featured-for:hover {
+  border-color: rgba(122, 188, 9, 1);/*leaf*/
+  background-color: rgba(1, 156, 209, .1);/*blue*/
+  cursor: pointer;
+}
+.times #map-box {
+  border: 1px solid rgba(122, 188, 9, 1);
+  border-radius: 15px;
+  margin: 5px 0 15px 0;
+  padding: 0;
+  overflow: hidden;
+  position: relative;
+  height: 300px;
+  width: 95%;
+}
+.times iframe {
+  margin: 0;
+  padding: 0;
+}
+.times ul {
+  float: left;
+  width: 20%;
+  padding: 0 0 20px 35px;
+}
+.times ul li.highlight {
+  color: red;
+  font-weight: bold;
+  font-size: 110%;
+}
+.times ul li {
+  font-size: 90%;
+}
+.times h4 {
+  clear: left;
+  font-weight: bold;
+}

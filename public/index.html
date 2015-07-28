@@ -4,21 +4,18 @@
   <meta charset="UTF-8">
 <meta name="keywords" content="Salish sea, puget sound, nature guide, seattle, washington, seasonal, naturalist, olympic peninsula, summer, fall, autumn, winter, spring, hiking, birding"/>
   <title>SSG :: Home</title>
-<!-- CSS
-–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<!-- –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 <link type="text/css" href="css/app.css" rel="stylesheet"/>
+<link type="text/css" href="css/header.css" rel="stylesheet"/>
+<link type="text/css" href="css/gradient.css" rel="stylesheet"/>
 <link type="text/css" href="css/nav.css" rel="stylesheet"/>
-<link type="text/css" href="css/index-carousel.css" rel="stylesheet"/>
-<link type="text/css" href="css/tabs.css" rel="stylesheet"/>
-<!-- JAVASCRIPT
-–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<link type="text/css" href="css/article.css" rel="stylesheet"/>
+<link type="text/css" href="css/footer.css" rel="stylesheet"/>
+
+<!-- –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 <script src="js/deps/jquery.js"></script>
-<script src="js/nav.js"></script>
-<script src="js/featured.js"></script>
-<!-- <script src="js/set-month.js"></script> -->
 </head>
-<!-- CONTENT
-–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<!-- –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 <body>
   <header>
     <div id="contact">
@@ -26,148 +23,81 @@
         <input type="text" name="search" id="search" placeholder="Search">
         <button type="submit" id="search-go">Go</button>
       </form>
-      <a href="#" class="kids" id="kids-header">For Kids</a> <a href="#" id="blog-header">Blog</a> <a href="#" id="about-header">About</a> <a href="#" id="contact-header">Contact</a> <a href="#" id="faq-header">FAQ</a>
+      <a href="#" class="kids" id="kids-header">For Kids</a> <a href="#" id="about-header">About</a> <a href="#" id="faq-header">FAQ</a>
     </div>
     <a href="index.html"><h1>Salish Sea<span>sonal Guide</span></h1><h2>Where to go and what to see, in and around the Salish Sea</h2></a>
   </header>
-  <section id="July-carousel" class="carousel"> 
-    <div class="caro-item special">
-      <h3 id="caro-0-link" class="caro-link">Featured for <span class="current-month-name"></span>July:</h3>
+  <main>
+    <div id="title-photo">
+      <div id="title-photo-gradient"></div>
+      <img src="images/olympics-panorama-narrow.jpg" height="250">
     </div>
-    <a href="#oystercatchers" class="box-link backup" id="box-1">
-      <div class="caro-item backup" id="caro-1">
-      <h3 id="caro-1-link" class="caro-link backup">Featured for <span class="current-month-name">July</span>: <span class="feature">Oystercatchers</span></h3>
-      <p class="photo-credit">Photo by Molly Kent</p>
-      <img id="caro-1-image" src="images/birdwatching.png" alt="an oystercatcher on a rock by the sea">
-      </div>
-    </a>
-    <a href="#farmers" class="box-link backup" id="box-2">
-      <div class="caro-item backup" id="caro-2">
-        <h3 id="caro-2-link" class="caro-link backup">Featured for <span class="current-month-name">July</span>: <span class="feature">Farmers Markets</span></h3>
-        <p class="photo-credit">Photo by Molly Kent</p>
-        <img id="caro-2-image" src="images/farmersmarkets.png" alt="a blooming khardoun">
-      </div>
-    </a>
-    <a href="#orcas" class="box-link backup" id="box-3">
-      <div class="caro-item backup" id="caro-3">
-      <h3 id="caro-3-link" class="caro-link backup">Featured for <span class="current-month-name">July</span>: <span class="feature">Orcas</span></h3>
-      <p class="photo-credit">Photo by Molly Kent</p>
-      <img id="caro-3-image" src="images/orcas.png" alt="two orcas spouting">
-      </div>
-    </a>
-    <a href="#sunsets" class="box-link backup" id="box-4">
-      <div class="caro-item backup" id="caro-4">
-      <h3 id="caro-4-link" class="caro-link backup">Featured for <span class="current-month-name">July</span>: <span class="feature">Sunsets</span></h3>
-      <p class="photo-credit">Photo by Molly Kent</p>
-      <img id="caro-4-image" src="images/sunsets.png" alt="a dramatic red sunset">
-      </div>
-    </a>
-    <a href="#tidepools" class="box-link backup" id="box-5">
-      <div class="caro-item backup" id="caro-5">
-      <h3 id="caro-5-link" class="caro-link backup">Featured for <span class="current-month-name">July</span>: <span class="feature">Tidepools</span></h3>
-      <p class="photo-credit">Photo by Molly Kent</p>
-      <img id="caro-5-image" src="images/tidepools.png" alt="mussels and sea anemones in a rocky crevice">
-      </div>
-    </a>
-    <a href="#seals" class="box-link backup" id="box-6">
-      <div class="caro-item backup" id="caro-6">
-      <h3 id="caro-6-link" class="caro-link backup">Featured for July: <span class="feature">Harbor Seals</span></h3>
-      <p class="photo-credit">Photo by Molly Kent</p>
-      <img id="caro-6-image" src="images/marinemammals.png" alt="a Harbor seal on a rock">
-      </div>
-    </a>
-   <!--  <a href="#tidepools" class="box-link backup" id="box-7">
-      <div class="caro-item backup" id="caro-7">
-      <h3 id="caro-7-link" class="caro-link backup">Featured for <span class="current-month-name">July</span>: <span class="feature">Tidepools</span></h3>
-      <p class="photo-credit">Photo by Molly Kent</p>
-      <img id="caro-7-image" src="images/tidepools.png" alt="mussels and sea anemones in a rocky crevice">
-      </div>
-    </a> -->
-    <div id="pos-wrapper">
-      <div class="pos" id="pos1"></div>
-      <div class="pos" id="pos2"></div>
-      <div class="pos" id="pos3"></div>
-      <div class="pos" id="pos4"></div>
-      <div class="pos" id="pos5"></div>
-      <div class="pos" id="pos6"></div>
-      <!-- <div class="pos" id="pos7"></div> -->
-    </div>
-    <button id="caro-left"><span id="left">«</span></button>
-    <button id="caro-right"><span id="right">»</span></button>
-  </section>
-   
-  <section id="tabs">
-    <div id="explore"><h2>Explore More</h2></div>
-    <div class="column-wrapper">
+      <nav class="top">
+        <span class="smaller">By </span><a href="#">MONTH</a> <span class="smaller">By </span><a href="#"> LOCATION</a> <span class="smaller">By </span><a href="#"> ACTIVITY</a> <a href="#" id="home"> HOME</a> 
+      </nav>
+      <nav class="side">
+        <h3>RECENT</h3>
+        <ul>
+          <li><a href="#">Close Encounter: Bald Eagle</a></li>
+          <li><a href="#">Bird Excursion: Mercer Slough</a></li>
+          <li><a href="#">Blackberries</a></li>
+          <li><a href="#">Lime Kiln State Park</a></li>
+          <li><a href="#">Blue Moon</a></li>
+        </ul>
+        <h3>ARCHIVE</h3>
+        <ul>
+          <li><a href="#">2015</a></li>
+          <li><a href="#">2014</a></li>
+          <li><a href="#">2013</a></li>
+          <li><a href="#">2012</a></li>
+        </ul>
+        <h3>POPULAR</h3>
+        <ul>
+          <li><a href="#">July</a></li>
+          <li><a href="#">Hiking</a></li>
+          <li><a href="#">Close Encounters</a></li>
+          <li><a href="#">Orcas</a></li>
+          <li><a href="#">Bird Excursions</a></li>
+          <li><a href="#">Botany Excursions</a></li>
+        </ul>
+      </nav>
+    
+    <article id="">
+      <h2>Harbor Seals <a href="#" class="location">San Juan Island</a> <a href="#" class="date">Sept. 16<span class="superscript">th</span> 2014</a></h2>
+      <p>Nunc efficitur rhoncus lorem. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nam vitae tortor orci. Phasellus nec nunc ac neque tempus pharetra. Nulla commodo eu odio ut condimentum. Fusce sit amet purus convallis, facilisis mi sit amet, tristique orci. Aenean blandit tortor id imperdiet pretium. Vestibulum eu leo vel mauris fermentum pretium eget sed mi. Fusce congue blandit elementum. Praesent et purus quam. Aliquam tincidunt orci sit amet efficitur vestibulum. Ut ac hendrerit ligula, vitae maximus massa. Sed faucibus sem laoreet, finibus orci eget, convallis ipsum. Sed condimentum condimentum mauris, et volutpat nibh bibendum id. Nunc fringilla mi id tempus maximus.</p>
+      <figure> 
+        <img src="images/marinemammals.jpg">
+        <figcaption>Harbor seal. Photo by Molly Kent.</figcaption>
+      </figure>
+      <p>Aenean eget interdum ipsum, vel laoreet nibh. In eu turpis non libero ornare gravida sit amet vel sapien. Nam non ultrices odio. Phasellus et elit elit. Nullam vitae risus sit amet lacus porttitor mattis. Donec interdum  augue eget auctor interdum. Nulla vehicula, quam nec cursus fermentum, leo purus dapibus urna, interdum maximus augue quam in ante. Curabitur posuere nibh eget diam elementum tempus. Ut vel dapibus ligula, et pharetra tortor. Nullam non nisi ac nunc laoreet feugiat. Etiam a augue id enim posuere vestibulum. Praesent lorem lacus, aliquet vitae diam vel, pretium faucibus nibh. Etiam varius ipsum id mauris tincidunt, nec molestie orci efficitur.</p>
+      <p>Donec placerat posuere metus, at consectetur quam ultrices ut. Cras ullamcorper nibh ut ex bibendum, in cursus neque fermentum. Cras felis sem, feugiat id orci ac, sagittis sodales neque. Maecenas non urna ac odio molestie luctus quis eget mauris. Curabitur fringilla ut arcu quis varius. Praesent nec posuere augue, sed mattis erat. Vivamus at dignissim ligula. Suspendisse potenti. Etiam ullamcorper ante sapien, vel tincidunt tellus ultrices nec. Morbi facilisis pharetra nunc, et accumsan urna porta at. Duis hendrerit metus non dictum fringilla. Phasellus quis luctus mi.</p>
+      <figure class="right"> 
+        <img src="images/marinemammals.jpg">
+        <figcaption>Harbor seal. Photo by Molly Kent.</figcaption>
+      </figure>
+      <p>Nunc tincidunt interdum ipsum ac pharetra. Maecenas aliquam quis nibh vel pellentesque. Donec vel cursus lacus, vitae dapibus velit. Praesent accumsan nunc tellus, commodo posuere libero aliquam ac. Maecenas vehicula convallis lorem mattis imperdiet. Curabitur ac varius libero, sed vestibulum erat. Donec massa ante, elementum id scelerisque at, euismod ut ante. Donec ante elit, finibus eu tempor faucibus, sagittis nec nisi. Sed sed imperdiet justo. Aenean id ante malesuada, sollicitudin justo in, molestie nisi. Morbi non rutrum lorem.</p>
+      <p>Quisque fringilla, lectus eget lobortis malesuada, ligula tortor congue ante, sit amet imperdiet est neque id lacus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Integer vel eros urna. Aliquam lobortis id nisi sed viverra. In sit amet nunc at metus bibendum tincidunt sed quis lectus. Donec fermentum, orci id elementum aliquet, purus libero sollicitudin felis, sit amet faucibus velit massa quis nisi. Curabitur ipsum arcu, suscipit nec risus vitae, sagittis mollis arcu.</p>
+      <nav class="bottom">
+        <h3>RELATED</h3>
+        <a href="#">
+          <div><h4>River Otters</h4><img src="images/marinemammals.jpg"></div>
+        </a> 
+        <a href="#">
+          <div><h4>The Ballard Locks</h4><img src="images/marinemammals.jpg"></div>
+        </a>
+        <a href="#">
+          <div><h4>Sea Kayaking</h4><img src="images/marinemammals.jpg"></div>
+        </a>
+        <a href="#">
+          <div><h4>Tidepools</h4><img src="images/marinemammals.jpg"></div>
+        </a>
+      </nav>
+      <a class="toplink" href="#top">Top</a>
+    </article>
 
-      <div class="column" id="col1">
-        <h3>When to Go</h3>
-          <ol class="months">
-            <a href="months/january.html"><li class="month inner-column">January</li></a>
-            <a href="months/february.html"><li class="month inner-column">February</li></a>
-            <a href="months/march.html"><li class="month inner-column">March</li></a>
-            <a href="months/april.html"><li class="month inner-column">April</li></a>
-          </ol>
-          <ol class="months">
-            <a href="months/may.html"><li class="month inner-column">May</li></a>
-            <a href="months/june.html"><li class="month inner-column">June</li></a>
-            <a href="months/july.html"><li class="month inner-column">July</li></a>
-            <a href="months/august.html"><li class="month inner-column">August</li></a>
-          </ol>
-          <ol class="months">
-            <a href="months/september.html"><li class="month inner-column">September</li></a>
-            <a href="months/october.html"><li class="month inner-column">October</li></a>
-            <a href="months/november.html"><li class="month inner-column">November</li></a>
-            <a href="months/december.html"><li class="month inner-column">December</li></a>
-          </ol>
-      </div>
-      <div class="column" id="col2">
-        <h3>Where to Go</h3>
-          <ol class="locations">
-            <li class="location inner-column superlocation">USA</li>
-            <a href="locations/central-sound.html"><li class="location inner-column sublocation">Seattle Area</li></a>
-            <a href="locations/puget-sound.html"><li class="location inner-column sublocation">Puget Sound Islands</li></a>
-            <a href="locations/hood-canal.html"><li class="location inner-column sublocation">Kitsap & Hood Canal</li></a>
-            <a href="locations/hood-canal.html"><li class="location inner-column sublocation">Olympia Area</li></a>
-          </ol>
-          <ol class="locations">
-            <a href="locations/sji.html"><li id="sji" class="location inner-column sublocation">San Juan Islands</li></a>
-            <a href="locations/sji.html"><li class="location inner-column sublocation">Olympic Peninsula</li></a>
-            <a href="locations/south-sound.html"><li class="location inner-column sublocation">Bellingham Area</li></a>
-            
-            <a href="locations/sji.html"><li class="location inner-column sublocation">Ocean Beaches</li></a>
-          </ol>
-          <ol class="locations">
-            <li class="location inner-column superlocation">Canada</li>
-            <a href="locations/quimper.html"><li class="location inner-column sublocation">Vancouver Island</li></a>
-            <a href="locations/angeles.html"><li class="location inner-column sublocation">Gulf Islands</li></a>
-            <a href="locations/victoria.html"><li class="location inner-column sublocation">Vancouver Area</li></a>
-            <a href="locations/neah-bay.html"><li class="location inner-column sublocation">Mainland Coast</li></a>
-            
-          </ol>
-      </div>
-      <div class="column" id="col3">
-        <h3>What to See</h3>
-        <ol class="attractions">
-          <li class="attraction inner-column">For Kids</li>
-          <li class="attraction inner-column">Birds</li>
-          <li class="attraction inner-column">Mammals</li>
-        </ol>
-        <ol class="attractions">
-          <li class="attraction inner-column">Tidepools</li>
-          <li class="attraction inner-column">Plants</li>
-          <li class="attraction inner-column">Fish</li>
-        </ol>
-        <ol class="attractions">
-          <li class="attraction inner-column">Reptiles etc.</li>
-          <li class="attraction inner-column">Insects</li>
-          <li class="attraction inner-column">More...</li>
-        </ol>
-      </div>
-    </div>
-  </section>
+  </main>
   
-  <footer><p id="contact-links"><a href="#">Blog</a> <a href="#">About</a> <a href="#">Contact</a> <a href="#">FAQ</a></p><p id="copyright">Copyright 2015 &copy; All Rights Reserved</p></footer>
+  <footer><p id="contact-links"><a href="#">For Kids</a> <a href="#">About</a> <a href="#">FAQ</a></p><p id="copyright">Copyright 2015 &copy; All Rights Reserved</p></footer>
 
   <!--
   wolf moon photo by pollyalida https://www.flickr.com/photos/pollyalida/

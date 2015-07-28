@@ -51,7 +51,7 @@
   transition: width 0.4s;
 }
 .column h3 {
-  margin: 10px;
+  margin: 10px 10px 2px 10px;
 }
 .column ol {
   list-style-type: none;
@@ -84,26 +84,41 @@
 .column ol li:hover {
   cursor: pointer;
   background-color: #ddd;
+  border-color: #979797;
+}
+.column ol li.superlocation:hover {
+  cursor: default;
+  /*background-color: #ddd;*/
 }
 .column ol.locations {
-  width: 23%;
+  width: 29%;
 }
 .column ol.locations li.location {
-  /*display: block;*/
-  background-color: #bbb;
+  background-color: rgba(1,1,1,0);
   padding: 5px 6px 5px 5px;
-  border: 1px solid #bbb;
+  border: none;
   border-radius: 5px;
   margin: 1px;
   font-weight: bold;
+  /*color: #fff;*/
+  /*font-size: 110%;*/
+  letter-spacing: .1em;
 }
 .column ol.locations li.sublocation {
+  color: #000;
   font-weight: normal;
   background-color: #fff;
+  border: 1px solid #bbb;
+  font-size: 100%;
+  letter-spacing: normal;
 }
-.column ol.locations li:hover {
+#sji {
+  margin-top: 30px;
+}
+.column ol.locations li.sublocation:hover {
   /*cursor: pointer;*/
   background-color: #ddd;
+  border-color: #979797;
 }
 .column ol.attractions {
   width: 30%;

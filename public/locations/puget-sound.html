@@ -14,7 +14,8 @@
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 <script src="../js/deps/jquery.js"></script>
 <script src="../js/nav.js"></script>
-<script src="../js/icons.js"></script>
+<!-- <script src="../js/icons.js"></script> -->
+<script src="../js/superwhere.js"></script>
 <!-- <script src="js/featured.js"></script> -->
 <!-- <script src="js/set-month.js"></script> -->
 </head>
@@ -33,29 +34,30 @@
   </header>
   
   <main>
+    <div id="map-box">
+      <img id="map" src="../images/SOUND-map.jpg" height="589" width="300" alt="map of the Puget Sound basin">
+    </div>
     <h2><a class="next-place" href="outer-coast.html">« Outer Coast</a> Puget Sound <a class="next-place" href="juan-fuca.html">Str. of Juan de Fuca »</a></h2>
     <section id="featured">
       <div id="featured-columns">
-        
         <div class="regions">
-          <h3>San Juan Islands</h3>
-          <p>Includes the San Juans, Bellingham Bay, the Skagit Flats, Mt Baker, etc.</p>
-          <h3>Central Sound</h3>
-          <p>Seattle, Elliot Bay, Bainbridge & Whidbey Islands, the I-90 Corridor, etc.</p>
-          <h3>South Sound</h3>
-          <p>Vashon Island, Olympia, Mt. Rainier, etc.</p>
-          <h3>Hood Canal & Kitsap</h3>
-          <p>North Kitsap, Hoodsport, Port Ludlow, Dabob Bay, Eastern Olympic Mountains, etc.</p>
-
-          
+          <div id="sji">
+            <h3>San Juan Islands</h3>
+            <p>Includes the San Juans, Bellingham Bay, the Skagit Flats, Mt Baker, etc.</p>
+          </div>
+          <div id="central">
+            <h3>Central Sound</h3>
+            <p>Seattle, Elliot Bay, Bainbridge & Whidbey Islands, the I-90 Corridor, etc.</p>
+          </div>
+          <div id="kitsap">
+            <h3>Hood Canal & Kitsap</h3>
+            <p>North Kitsap, Hoodsport, Port Ludlow, Dabob Bay, Eastern Olympic Mountains, etc.</p>
+          </div>
+          <div id="south">
+            <h3>South Sound</h3>
+            <p>Vashon Island, Olympia, Mt. Rainier, etc.</p>
+          </div>
         </div>
-        <div class="map">
-          <div id="map-box">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d997188.2861549057!2d-122.65622420270557!3d47.88877371258547!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1437763638614" width="100%" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
-        </div>
-          
-        </div>
-        
       </div>
     </section>
   </main>

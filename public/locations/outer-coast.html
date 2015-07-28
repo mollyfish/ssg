@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
 <meta name="keywords" content="Salish sea, puget sound, nature guide, seattle, washington, seasonal, naturalist, olympic peninsula, summer, fall, autumn, winter, spring, hiking, birding"/>
-  <title>SSG :: Puget Sound</title>
+  <title>SSG :: Outer Coast</title>
 <!-- CSS
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 <link type="text/css" href="../css/app.css" rel="stylesheet"/>
@@ -14,7 +14,7 @@
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 <script src="../js/deps/jquery.js"></script>
 <script src="../js/nav.js"></script>
-<script src="../js/icons.js"></script>
+<script src="../js/superwhere.js"></script>
 <!-- <script src="js/featured.js"></script> -->
 <!-- <script src="js/set-month.js"></script> -->
 </head>
@@ -33,32 +33,32 @@
   </header>
   
   <main>
+    <div id="map-box">
+      <img id="map" src="../images/WA-map-coast.jpg" height="667" width="500" alt="map of the Puget Sound basin">
+    </div>
     <h2><a class="next-place" href="str-georgia.html">« Str. of Georgia</a> Outer Coast <a class="next-place" href="puget-sound.html">Puget Sound »</a></h2>
     <section id="featured">
       <div id="featured-columns">
-        
-        <div class="things"><h3>What to See</h3>
-          <!-- <a href="#oystercatchers">
-            <button class="featured-for">
-              <div class="icons"></div>
-              <img src="../images/oystercatcher-button.jpg" height="150" width="150" alt="An oystercatcher on a lichen covered rock">
-              <h4>Oystercatchers</h4>
-              <p>Catch a glimpse of these charming, distinctive birds.</p>
-            </button>
-          </a> -->
-          
+        <div id="featured-columns">
+        <div class="regions">
+          <div id="lapush">
+            <h3>La Push</h3>
+            <p>From Neah Bay south to the Hoh River.</p>
+          </div>
+          <div id="kalaloch">
+            <h3>Kalaloch</h3>
+            <p>Ruby Beach to Point Grenville.</p>
+          </div>
+          <div id="shores">
+            <h3>Ocean Shores</h3>
+            <p>Moclips to Twin Harbors State Park.</p>
+          </div>
+          <div id="south">
+            <h3>Willapa Bay</h3>
+            <p>Grayland to Cape Disappointment.</p>
+          </div>
         </div>
-        <div class="times"><h3>When to Go</h3>
-          <!-- <a href="#saltcreek">
-            <button class="featured-for kids">
-              <div class="icons"></div>
-              <img src="../images/saltcreek-button.jpg" height="150" width="150" alt="A view of the beach at Salt Creek">
-              <h4>Salt Creek</h4>
-              <p>Explore some of the best tidepools in the state.</p>
-            </button>
-          </a> -->
-          
-        </div>
+      </div>
       </div>
     </section>
   </main>

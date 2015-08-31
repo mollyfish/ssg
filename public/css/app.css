@@ -86,6 +86,12 @@ span.superscript {
 main {
   /*background-color: red;*/
 }
+p.photocredit {
+  color: #fff;
+  font-size: 50%;
+  font-style: italic;
+  margin: -15px 0 0 4px;
+}
 
 /*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 RESPONSIVE

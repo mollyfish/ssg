@@ -22,6 +22,6 @@
   },
   "homepage": "https://github.com/Antraeus/project_knittable",
   "dependencies": {
-    "express": "^4.12.3"
+    "express": "^4.13.3"
   }
 }

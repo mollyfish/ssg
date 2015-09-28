@@ -6,6 +6,7 @@ form, fieldset, a {
   padding: 0;
   border: 0;
   font-family: Arial, sans-serif;
+  box-sizing: border-box;
 }
 body {
 font-size: 100.01%; /* Fix for some browser bugs */
@@ -21,6 +22,7 @@ html {
 }
 /* --> END OF BROWSER DEFAULT REMOVAL */
 
+
 /*COLORS*/
 /*rgba(63, 178, 74, 1) olive green*/
 /*rgba(122, 188, 9, 1) leaf green*/
@@ -28,25 +30,21 @@ html {
 /*rgba(188, 130, 9, 1) orange brown*/
 /*rgba(178, 72, 0, 1) chestnut*/
 html {
-  background-color: #2d3754;
+  background-color: $color-1a;
 }
 body {
   margin: 0 10px;
 }
 header {
-  /*background-color: #100b04;*/
   background-color: #fff;
   height: 87px;
-  /*background-image: url(../images/SSGbanner2.jpg);*/
   background-repeat: no-repeat;
   border-bottom: 1px solid rgba(0, 0, 0, 1);
 }
 h1 {
   font-size: 250%;
   letter-spacing: .02em;
-  /*color: #000;*/
   padding: 12px 45px 30px 45px;
-  /*background-color: rgba(1, 1, 1, .7);*/
   font-weight: bolder;
 }
 h1 span {
@@ -59,7 +57,6 @@ h2 {
   margin: 10px 20px;
   font-weight: bold;
   letter-spacing: .1em;
-  /*color: #eee;*/
 }
 header h2 {
   font-size: 100%;

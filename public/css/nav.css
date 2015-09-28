@@ -1,85 +1,91 @@
-#contact {
-  float: right;
-/*  margin-top: 40px;
-  margin-right: 20px;*/
-  color: #000;
+nav {
+  font-size: 130%;
   font-weight: bold;
-  width: 30%;
+  line-height: 1.8em;
+  /*background-color: green;*/
+  
+  margin: 10px 10px;
+  color: #666;
 }
-#contact form#search-box {
-  /*display: inline;*/
-  /*float: left;*/
-  /*padding-right: 20px;*/
-  /*padding-bottom: 0px;*/
-  position: absolute;
-  right: 20px;
-  top: 15px;
+nav.top {
+  border-top: 1px solid rgba(0,0,0,.2);
+  border-bottom: 1px solid rgba(0,0,0,.2);
 }
-#contact form#search-box input {
-  width: 200px;
-  height: 18px;
-  font-size: .8em;
-  border-radius: 5px;
-  border: 2px solid rgba(1, 156, 209, 1);
-  padding-left: 5px;
+nav.top a {
+  margin-right: 45px;
+  color: #444;
 }
-#contact button#search-go {
-  padding: 3px 5px 4px 4px;
-  border-radius: 5px;
-  border: 2px solid rgba(122, 188, 9, 1);
-  background-color: rgba(178, 72, 0, 1);
-  margin-left: 5px;
+nav.top span:first-child {
+  margin-left: 15px;
 }
-#contact button#search-go:hover {
-  color: #fff;
-  cursor: pointer;
+nav.top a:hover {
+  text-decoration: underline;
 }
-#contact a {
+#home {
+  float: right;
+}
+nav.top .smaller {
+  font-size: 80%;
+  font-weight: normal;
   color: #000;
-  background-color: #fff;
-  padding: 4px 5px 3px 5px;
-  text-decoration: none;
-  border-radius: 5px;
-  position: absolute;
-  top: 49px;
 }
-#contact a:visited {
+nav.side {
+  width: 20%;
+  color: #666;
+  /*background-color: green;*/
+  float: right;
+  padding: 10px;
+  margin: 0px 0 10px 20px;
+  font-size: 80%;
 }
-#contact a:hover {
-  background-color: rgba(1, 156, 209, 1);
-  color: #fff;
+nav.side h3 {
+  font-size: 100%;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
 }
-#contact a.kids {
-  background-color: yellow;
+nav.side ul {
+  list-style-type: disc;
+  font-size: 100%;
+  line-height: 1.2em;
+  border-bottom: 1px solid rgba(0,0,0,.2);
+  padding: 0px 15px 10px 15px;
+  font-weight: normal;
 }
-#contact a.kids:hover {
-  background-color: rgba(1, 156, 209, 1);
+nav.side ul:last-child {
+  border-bottom: none;
 }
-#kids-header {
-  right: 256px;
+nav.side ul li a:hover {
+  text-decoration: underline;
 }
-#blog-header {
-  right: 205px;
+nav.bottom {
+  font-size: 100%;
+  margin: 0;
 }
-#about-header {
-  right: 144px;
+nav.bottom h3 {
+  font-size: 100%;
+  font-style: normal;
+  margin: 10px 0 10px 0;
+  padding: 0;
+  font-weight: bold;
+  border-bottom: 1px solid rgba(0,0,0,.2);
 }
-#contact-header {
-  right: 69px;
+nav.bottom a {
+  line-height: 1em;
+  /*padding-top: 8px;*/
 }
-#faq-header {
-  right: 20px;
+nav.bottom div {
+  float: left;
+  width: 23%;
+  margin-right: 1em;
 }
-/*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-RESPONSIVE
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
-@media screen and (max-width: 1076px) {
- /* #contact form#search-box {
-    display: block;
-    float: none;
-    margin-top: -30px;
-    margin-bottom: 20px;
-    padding-right: 20px;
-    padding-bottom: 0px;
-  }*/
+nav.bottom div h4 {
+  font-size: 110%;
+  padding-bottom: 3px;
+}
+nav.bottom img {
+  max-width: 100px;
+  max-height: 100px;
+  /*border: none;*/
 }

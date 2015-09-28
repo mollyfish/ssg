@@ -2,36 +2,111 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>About</title>
-<!-- CSS
-–––––––––––––––––––––––––––––––––––––––––––––––––– -->
-<link type="text/css" href="css/reset.css" rel="stylesheet"/>
-<link type="text/css" href="css/pure_forms.css" rel="stylesheet"/>
+<meta name="keywords" content="Salish sea, puget sound, nature guide, seattle, washington, seasonal, naturalist, olympic peninsula, summer, fall, autumn, winter, spring, hiking, birding"/>
+  <title>SSG :: About</title>
+<!-- –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 <link type="text/css" href="css/app.css" rel="stylesheet"/>
-<link rel="stylesheet" type="text/css" href="css/print.css" media="print">
-<link rel="shortcut icon" href="images/favicon.png" />
-</head>
-<!-- JAVASCRIPT
-–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<link type="text/css" href="css/header.css" rel="stylesheet"/>
+<link type="text/css" href="css/gradient.css" rel="stylesheet"/>
+<link type="text/css" href="css/nav.css" rel="stylesheet"/>
+<link type="text/css" href="css/article.css" rel="stylesheet"/>
+<link type="text/css" href="css/footer.css" rel="stylesheet"/>
+
+<!-- –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 <script src="js/deps/jquery.js"></script>
-<!-- <script src="js/About.js"></script> -->
-<!-- CONTENT
-–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</head>
+<!-- –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 <body>
   <header>
-    <h1>KnitWare</h1>
-    <nav>
-      <a href="index.html"><button class="nav">Home</button></a><a href="design.html"><button class="nav">Design</button></a><a href="pattern.html"><button class="nav">Pattern</button></a><a href="about.html"><button class="nav" id="nav-about">About</button></a><!-- NOT CALLED; styles button border -->
-    </nav>
+    <div id="contact">
+      <form id="search-box">
+        <input type="text" name="search" id="search" placeholder="Search">
+        <button type="submit" id="search-go">Go</button>
+      </form>
+      <a href="kids.html" class="kids" id="kids-header">For Kids</a> <a href="about.html" id="about-header">About</a> <a href="faq.html" id="faq-header">FAQ</a>
+    </div>
+    <a href="index.html"><h1>Salish Sea<span>sonal Guide</span></h1><h2>Where to go and what to see, in and around the Salish Sea</h2></a>
   </header>
   <main>
-    <section>
-        <h2>What is KnitWare?</h2>
-        <p>The purpose of KnitWare is to provide knitters with an easy way to design custom projects anywhere, anytime! Right now, it is a bit limited, but <span class="colorize">stay tuned!</span> Updates will be added soon, including lots of customization options, a smart-phone friendly edition, and even men's sizes!</p>
-        <h2>Where did KnitWare come from?</h2>
-        <p>KnitWare got its start as PROJECT:Knittable, the capstone project for a coding bootcamp. Molly, a knitter-turned-programmer, had the original idea, and still works on the program today.</p>
-    </section>    
+    <div id="title-photo">
+      <div id="title-photo-gradient"></div>
+      <img src="images/olympics-panorama-narrow.jpg" height="250">
+    </div>
+      <nav class="top">
+        <span class="smaller">By </span><a href="#">MONTH</a> <span class="smaller">By </span><a href="#"> LOCATION</a> <span class="smaller">By </span><a href="#"> ACTIVITY</a> <a href="#" id="home"> HOME</a> 
+      </nav>
+      <nav class="side">
+        <h3>RECENT</h3>
+        <ul>
+          <li><a href="#">Close Encounter: Bald Eagle</a></li>
+          <li><a href="#">Bird Excursion: Mercer Slough</a></li>
+          <li><a href="#">Blackberries</a></li>
+          <li><a href="#">Lime Kiln State Park</a></li>
+          <li><a href="#">Blue Moon</a></li>
+        </ul>
+        <h3>ARCHIVE</h3>
+        <ul>
+          <li><a href="#">2015</a></li>
+          <li><a href="#">2014</a></li>
+          <li><a href="#">2013</a></li>
+          <li><a href="#">2012</a></li>
+        </ul>
+        <h3>POPULAR</h3>
+        <ul>
+          <li><a href="#">July</a></li>
+          <li><a href="#">Hiking</a></li>
+          <li><a href="#">Close Encounters</a></li>
+          <li><a href="#">Orcas</a></li>
+          <li><a href="#">Bird Excursions</a></li>
+          <li><a href="#">Botany Excursions</a></li>
+        </ul>
+      </nav>
+    
+    <article id="">
+      <h2>About Us <a href="#" class="location"></a> <a href="#" class="date"><span class="superscript"></span></a></h2>
+      <p>Nunc efficitur rhoncus lorem. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nam vitae tortor orci. Phasellus nec nunc ac neque tempus pharetra. Nulla commodo eu odio ut condimentum. Fusce sit amet purus convallis, facilisis mi sit amet, tristique orci. Aenean blandit tortor id imperdiet pretium. Vestibulum eu leo vel mauris fermentum pretium eget sed mi. Fusce congue blandit elementum. Praesent et purus quam. Aliquam tincidunt orci sit amet efficitur vestibulum. Ut ac hendrerit ligula, vitae maximus massa. Sed faucibus sem laoreet, finibus orci eget, convallis ipsum. Sed condimentum condimentum mauris, et volutpat nibh bibendum id. Nunc fringilla mi id tempus maximus.</p>
+      <figure> 
+        <img src="images/marinemammals.jpg">
+        <figcaption>Harbor seal. Photo by Molly Kent.</figcaption>
+      </figure>
+      <p>Aenean eget interdum ipsum, vel laoreet nibh. In eu turpis non libero ornare gravida sit amet vel sapien. Nam non ultrices odio. Phasellus et elit elit. Nullam vitae risus sit amet lacus porttitor mattis. Donec interdum  augue eget auctor interdum. Nulla vehicula, quam nec cursus fermentum, leo purus dapibus urna, interdum maximus augue quam in ante. Curabitur posuere nibh eget diam elementum tempus. Ut vel dapibus ligula, et pharetra tortor. Nullam non nisi ac nunc laoreet feugiat. Etiam a augue id enim posuere vestibulum. Praesent lorem lacus, aliquet vitae diam vel, pretium faucibus nibh. Etiam varius ipsum id mauris tincidunt, nec molestie orci efficitur.</p>
+      <p>Donec placerat posuere metus, at consectetur quam ultrices ut. Cras ullamcorper nibh ut ex bibendum, in cursus neque fermentum. Cras felis sem, feugiat id orci ac, sagittis sodales neque. Maecenas non urna ac odio molestie luctus quis eget mauris. Curabitur fringilla ut arcu quis varius. Praesent nec posuere augue, sed mattis erat. Vivamus at dignissim ligula. Suspendisse potenti. Etiam ullamcorper ante sapien, vel tincidunt tellus ultrices nec. Morbi facilisis pharetra nunc, et accumsan urna porta at. Duis hendrerit metus non dictum fringilla. Phasellus quis luctus mi.</p>
+      <figure class="right"> 
+        <img src="images/marinemammals.jpg">
+        <figcaption>Harbor seal. Photo by Molly Kent.</figcaption>
+      </figure>
+      <p>Nunc tincidunt interdum ipsum ac pharetra. Maecenas aliquam quis nibh vel pellentesque. Donec vel cursus lacus, vitae dapibus velit. Praesent accumsan nunc tellus, commodo posuere libero aliquam ac. Maecenas vehicula convallis lorem mattis imperdiet. Curabitur ac varius libero, sed vestibulum erat. Donec massa ante, elementum id scelerisque at, euismod ut ante. Donec ante elit, finibus eu tempor faucibus, sagittis nec nisi. Sed sed imperdiet justo. Aenean id ante malesuada, sollicitudin justo in, molestie nisi. Morbi non rutrum lorem.</p>
+      <p>Quisque fringilla, lectus eget lobortis malesuada, ligula tortor congue ante, sit amet imperdiet est neque id lacus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Integer vel eros urna. Aliquam lobortis id nisi sed viverra. In sit amet nunc at metus bibendum tincidunt sed quis lectus. Donec fermentum, orci id elementum aliquet, purus libero sollicitudin felis, sit amet faucibus velit massa quis nisi. Curabitur ipsum arcu, suscipit nec risus vitae, sagittis mollis arcu.</p>
+      <nav class="bottom">
+        <h3>RELATED</h3>
+        <a href="#">
+          <div><h4>River Otters</h4><img src="images/marinemammals.jpg"></div>
+        </a> 
+        <a href="#">
+          <div><h4>The Ballard Locks</h4><img src="images/marinemammals.jpg"></div>
+        </a>
+        <a href="#">
+          <div><h4>Sea Kayaking</h4><img src="images/marinemammals.jpg"></div>
+        </a>
+        <a href="#">
+          <div><h4>Tidepools</h4><img src="images/marinemammals.jpg"></div>
+        </a>
+      </nav>
+      <a class="toplink" href="#top">Top</a>
+    </article>
+
   </main>
-  <footer>Copyright 2015 &copy; All Rights Reserved</footer>
+  
+  <footer><p id="contact-links"><a href="#">For Kids</a> <a href="#">About</a> <a href="#">FAQ</a></p><p id="copyright">Copyright 2015 &copy; All Rights Reserved</p></footer>
+
+  <!--
+  wolf moon photo by pollyalida https://www.flickr.com/photos/pollyalida/
+  ski safari by patrickdevries2003 https://www.flickr.com/photos/p_de_vries/
+  storm watching photo by Joey Rozier https://www.flickr.com/photos/mrjoro/
+  quadrantids photo by Andrew Kicinski https://www.flickr.com/photos/andrewkicinski/
+  swans photo by Brent M https://www.flickr.com/photos/thewakingdragon/
+  winter raptor photo by Ingrid Taylar https://www.flickr.com/photos/taylar/
+  -->
 </body>
 </html>
+

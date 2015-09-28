@@ -1,0 +1,68 @@
+article {
+  width: 73%;
+  text-align: justify;
+  background-color: #eee;
+  margin: 10px;
+  padding: 15px;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+article h2 {
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+article h2 a.date, article h2 a.location {
+  font-size: 40%;
+  letter-spacing: normal;
+  float: right;
+  padding-top: 17px;
+  font-style: italic;
+}
+article h2 a.location {
+  margin-left: 20px;
+}
+article h2 a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+article figure {
+  float: left;
+  width: 40%;
+  margin: 10px 20px 10px 0;
+}
+article figure.right {
+  float: right;
+  margin: 10px 0 10px 20px;
+}
+article figcaption {
+  font-size: 80%;
+  font-style: italic;
+}
+article figure img {
+  width: 100%;
+  max-width: 400px;
+  max-height: 600px;
+}
+article figure.right img {
+  width: 100%;
+  float: right;
+  max-width: 400px;
+  max-height: 600px;
+}
+article figure.right figcaption {
+  clear: right;
+  text-align: right;
+}
+article p {
+  margin: 10px 0 0 0px;
+  line-height: 1.4em;
+  letter-spacing: .01em;
+}
+article .toplink {
+  font-size: 90%;
+  position: absolute;
+  right: 20px;
+  bottom: 10px;
+}

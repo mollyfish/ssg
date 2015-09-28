@@ -1,76 +1,81 @@
-#contact {
-  float: right;
-  color: #000;
-  font-weight: bold;
-  width: 30%;
+header {
+  a {
+    display: inline-block;
+    border: 2px solid rgba(0, 0, 0, 0.6);
+    border-radius: 5px;
+    padding: 0.3em;
+    color: #000;
+    background-color: #aacde4;
+    &:hover {
+      color: #fff;
+      background-color: rgba(75, 138, 181, 1);
+    }
+  }
 }
-#contact form#search-box {
-  position: absolute;
-  right: 20px;
-  top: 12px;
+.kids {
+  background-color: yellow;
 }
-#contact form#search-box input {
-  width: 200px;
-  height: 18px;
-  font-size: .8em;
-  border-radius: 5px;
-  border: 2px solid rgba(0, 0, 0, .6);
-  padding-left: 5px;
-}
-#contact button#search-go {
-  padding: 3px 5px 4px 4px;
-  border-radius: 5px;
-  border: 2px solid rgba(0, 0, 0, .6);
-  background-color: rgba(170, 205, 228, 1);
-  margin-left: 5px;
-}
-#contact button#search-go:hover {
-  color: #fff;
-  background-color: rgba(75, 138, 181, 1);
-  cursor: pointer;
-}
-#contact a {
-  color: #000;
-  background-color: rgba(170, 205, 228, 1);
-  padding: 4px 5px 3px 5px;
-  text-decoration: none;
-  border: 2px solid rgba(0, 0, 0, .6);
-  border-radius: 5px;
-  position: absolute;
-  top: 46px;
-}
-#contact a:visited {
-}
-#contact a:hover {
-  background-color: rgba(75, 138, 181, 1);
-  color: #fff;
-}
-#contact a.kids {
-  background-color: rgba(255, 255, 0, 1);
-}
-#contact a.kids:hover {
-  background-color: rgba(255, 150, 0, 1);
-  color: #fff;
-}
-#kids-header {
-  right: 142px;
-}
-#about-header {
-  right: 75px;
-}
-#faq-header {
-  right: 20px;
-}
-/*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-RESPONSIVE
-$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
-@media screen and (max-width: 1076px) {
- /* #contact form#search-box {
-    display: block;
-    float: none;
-    margin-top: -30px;
-    margin-bottom: 20px;
-    padding-right: 20px;
-    padding-bottom: 0px;
-  }*/
-}
+// #contact {
+//   float: right;
+//   color: #000;
+//   font-weight: bold;
+//   width: 30%;
+// }
+// #contact form#search-box {
+//   position: absolute;
+//   right: 20px;
+//   top: 12px;
+// }
+// #contact form#search-box input {
+//   width: 200px;
+//   height: 18px;
+//   font-size: .8em;
+//   border-radius: 5px;
+//   border: 2px solid rgba(0, 0, 0, .6);
+//   padding-left: 5px;
+// }
+// #contact button#search-go {
+//   padding: 3px 5px 4px 4px;
+//   border-radius: 5px;
+//   border: 2px solid rgba(0, 0, 0, .6);
+//   background-color: rgba(170, 205, 228, 1);
+//   margin-left: 5px;
+// }
+// #contact button#search-go:hover {
+//   color: #fff;
+//   background-color: rgba(75, 138, 181, 1);
+//   cursor: pointer;
+// }
+// #contact a {
+//   color: #000;
+//   background-color: rgba(170, 205, 228, 1);
+//   padding: 4px 5px 3px 5px;
+//   text-decoration: none;
+//   border: 2px solid rgba(0, 0, 0, .6);
+//   border-radius: 5px;
+//   position: absolute;
+//   top: 46px;
+// }
+// #contact a:visited {
+// }
+// #contact a:hover {
+//   background-color: rgba(75, 138, 181, 1);
+//   color: #fff;
+// }
+// #contact a.kids {
+//   background-color: rgba(255, 255, 0, 1);
+// }
+// #contact a.kids:hover {
+//   background-color: rgba(255, 150, 0, 1);
+//   color: #fff;
+// }
+// #kids-header {
+//   right: 142px;
+// }
+// #about-header {
+//   right: 75px;
+// }
+// #faq-header {
+//   right: 20px;
+// }
+
